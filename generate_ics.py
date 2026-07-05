@@ -46,3 +46,22 @@ def fold_line(line: str) -> str:
         octets += ch_octets
     parts.append(current)
     return "\r\n".join(parts)
+
+
+# --- Datetime handling ---
+# ScrapedDuck times are usually timezone-less, meaning "local time wherever
+# the player is" (e.g. Community Day at 14:00 everywhere). Those become
+# floating ICS times. A trailing "Z" marks a genuinely global UTC moment.
+
+
+def parse_dt(value: str) -> tuple[datetime, bool]:
+    """Parse an ISO 8601 string into a naive datetime plus an is_utc flag."""
+    if value.endswith("Z"):
+        return datetime.fromisoformat(value[:-1]), True
+    return datetime.fromisoformat(value), False
+
+
+def format_dt(dt: datetime, is_utc: bool) -> str:
+    """Format a naive datetime as an ICS DATE-TIME (floating or UTC)."""
+    formatted = dt.strftime("%Y%m%dT%H%M%S")
+    return formatted + "Z" if is_utc else formatted

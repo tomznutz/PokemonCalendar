@@ -1,4 +1,5 @@
 import unittest
+from datetime import datetime
 
 import generate_ics
 
@@ -48,6 +49,26 @@ class FoldLineTests(unittest.TestCase):
             for i, p in enumerate(generate_ics.fold_line(line).split("\r\n"))
         )
         self.assertEqual(unfolded, line)
+
+
+class DatetimeTests(unittest.TestCase):
+    def test_parse_local_datetime_is_floating(self):
+        dt, is_utc = generate_ics.parse_dt("2026-07-04T14:00:00")
+        self.assertEqual(dt, datetime(2026, 7, 4, 14, 0, 0))
+        self.assertFalse(is_utc)
+
+    def test_parse_utc_datetime(self):
+        dt, is_utc = generate_ics.parse_dt("2026-07-04T14:00:00Z")
+        self.assertEqual(dt, datetime(2026, 7, 4, 14, 0, 0))
+        self.assertTrue(is_utc)
+
+    def test_format_floating(self):
+        dt = datetime(2026, 7, 4, 14, 0, 0)
+        self.assertEqual(generate_ics.format_dt(dt, is_utc=False), "20260704T140000")
+
+    def test_format_utc(self):
+        dt = datetime(2026, 7, 4, 14, 0, 0)
+        self.assertEqual(generate_ics.format_dt(dt, is_utc=True), "20260704T140000Z")
 
 
 if __name__ == "__main__":
