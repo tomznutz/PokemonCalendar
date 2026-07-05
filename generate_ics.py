@@ -107,6 +107,11 @@ def filter_events(events: list[dict], included_types: set[str]) -> list[dict]:
 # --- Calendar event content ---
 
 
+def _texts(items: list | None, key: str = "name") -> list[str]:
+    """Pull a text field from a list of dicts, skipping items that lack it."""
+    return [item.get(key) for item in items or [] if item.get(key)]
+
+
 def build_description(event: dict) -> str:
     """Assemble a plain-text description from the event's extraData.
 
@@ -117,21 +122,23 @@ def build_description(event: dict) -> str:
     extra = event.get("extraData") or {}
 
     community_day = extra.get("communityday") or {}
-    spawns = [p["name"] for p in community_day.get("spawns") or []]
+    spawns = _texts(community_day.get("spawns"))
     if spawns:
         lines.append("Featured: " + ", ".join(spawns))
-    bonuses = [b["text"] for b in community_day.get("bonuses") or []]
+    bonuses = _texts(community_day.get("bonuses"), key="text")
     if bonuses:
         lines.append("Bonuses:")
         lines.extend("• " + bonus for bonus in bonuses)
-    shinies = [s["name"] for s in community_day.get("shinies") or []]
+    shinies = _texts(community_day.get("shinies"))
     if shinies:
         lines.append("Shinies: " + ", ".join(shinies) + " ✨")
 
     raid_battles = extra.get("raidbattles") or {}
     bosses = [
-        boss["name"] + (" ✨" if boss.get("canBeShiny") else "")
+        name + (" ✨" if boss.get("canBeShiny") else "")
         for boss in raid_battles.get("bosses") or []
+        for name in [boss.get("name")]
+        if name
     ]
     if bosses:
         lines.append("Bosses: " + ", ".join(bosses))

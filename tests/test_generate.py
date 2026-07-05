@@ -224,6 +224,23 @@ class BuildDescriptionTests(unittest.TestCase):
         self.assertIn("Reward: Galarian Mr. Mime", desc)
         self.assertNotIn("Galarian Mr. Mime ✨", desc)
 
+    def test_tolerates_malformed_list_items(self):
+        event = make_event(
+            extraData={
+                "communityday": {
+                    "spawns": [{"image": "x"}, {"name": "Sobble", "image": "x"}],
+                    "bonuses": [{"image": "x"}],
+                    "shinies": [],
+                },
+                "raidbattles": {"bosses": [{"canBeShiny": True}], "shinies": []},
+                "generic": {"hasSpawns": True, "hasFieldResearchTasks": False},
+            }
+        )
+        desc = generate_ics.build_description(event)
+        self.assertIn("Featured: Sobble", desc)
+        self.assertNotIn("Bosses:", desc)
+        self.assertNotIn("Bonuses:", desc)
+
     def test_tolerates_missing_extra_data(self):
         desc = generate_ics.build_description(make_event(extraData=None))
         self.assertIn("Raid Hour", desc)
