@@ -93,9 +93,12 @@ def filter_events(events: list[dict], included_types: set[str]) -> list[dict]:
             print(f"warning: skipping {event.get('eventID')!r}: no start time", file=sys.stderr)
             continue
         try:
-            normalize_times(event)
+            start, _, end, _ = normalize_times(event)
         except ValueError:
             print(f"warning: skipping {event.get('eventID')!r}: bad datetime", file=sys.stderr)
+            continue
+        if end < start:
+            print(f"warning: skipping {event.get('eventID')!r}: end before start", file=sys.stderr)
             continue
         kept.append(event)
     return kept

@@ -113,6 +113,19 @@ class FilterEventsTests(unittest.TestCase):
         kept = generate_ics.filter_events(events, {"raid-hour"})
         self.assertEqual([e["eventID"] for e in kept], ["ok"])
 
+    def test_skips_event_with_unparseable_end(self):
+        events = [make_event(end="not-a-date"), make_event(eventID="ok")]
+        kept = generate_ics.filter_events(events, {"raid-hour"})
+        self.assertEqual([e["eventID"] for e in kept], ["ok"])
+
+    def test_skips_event_with_end_before_start(self):
+        events = [
+            make_event(start="2026-07-15T18:00:00", end="2026-07-14T19:00:00"),
+            make_event(eventID="ok"),
+        ]
+        kept = generate_ics.filter_events(events, {"raid-hour"})
+        self.assertEqual([e["eventID"] for e in kept], ["ok"])
+
 
 class NormalizeTimesTests(unittest.TestCase):
     def test_start_and_end_parsed(self):
