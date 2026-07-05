@@ -274,6 +274,12 @@ class BuildVeventTests(unittest.TestCase):
         lines = generate_ics.build_vevent(make_event(link=None), TEST_NOW)
         self.assertFalse(any(line.startswith("URL:") for line in lines))
 
+    def test_dtstamp_normalized_to_utc(self):
+        est = timezone(timedelta(hours=-5))
+        now = datetime(2026, 7, 5, 7, 0, 0, tzinfo=est)  # == 12:00 UTC
+        lines = generate_ics.build_vevent(make_event(), now)
+        self.assertIn("DTSTAMP:20260705T120000Z", lines)
+
 
 class BuildCalendarTests(unittest.TestCase):
     def test_calendar_wraps_events(self):

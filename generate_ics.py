@@ -172,7 +172,7 @@ def build_vevent(event: dict, now: datetime) -> list[str]:
     properties = [
         ("BEGIN", "VEVENT"),
         ("UID", f"{event['eventID']}@scrapedduck"),
-        ("DTSTAMP", now.strftime("%Y%m%dT%H%M%SZ")),
+        ("DTSTAMP", now.astimezone(timezone.utc).strftime("%Y%m%dT%H%M%SZ")),
         ("DTSTART", format_dt(start, start_utc)),
         ("DTEND", format_dt(end, end_utc)),
         ("SUMMARY", escape_text(event["name"])),
