@@ -1,5 +1,5 @@
 import unittest
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 
 import generate_ics
 
@@ -248,6 +248,56 @@ class BuildDescriptionTests(unittest.TestCase):
     def test_tolerates_missing_link(self):
         desc = generate_ics.build_description(make_event(link=None))
         self.assertIn("Raid Hour", desc)
+
+
+TEST_NOW = datetime(2026, 7, 5, 12, 0, 0, tzinfo=timezone.utc)
+TEST_CONFIG = {"calendarName": "Pokémon GO Events", "includedEventTypes": ["raid-hour"]}
+
+
+class BuildVeventTests(unittest.TestCase):
+    def test_basic_vevent_properties(self):
+        lines = generate_ics.build_vevent(make_event(), TEST_NOW)
+        self.assertEqual(lines[0], "BEGIN:VEVENT")
+        self.assertEqual(lines[-1], "END:VEVENT")
+        self.assertIn("UID:test-event-1@scrapedduck", lines)
+        self.assertIn("DTSTAMP:20260705T120000Z", lines)
+        self.assertIn("DTSTART:20260715T180000", lines)
+        self.assertIn("DTEND:20260715T190000", lines)
+        self.assertIn("SUMMARY:Test Event", lines)
+        self.assertIn("URL:https://leekduck.com/events/test-event-1/", lines)
+
+    def test_summary_is_escaped(self):
+        lines = generate_ics.build_vevent(make_event(name="Raids, Eggs; Fun"), TEST_NOW)
+        self.assertIn(r"SUMMARY:Raids\, Eggs\; Fun", lines)
+
+    def test_no_url_property_when_link_missing(self):
+        lines = generate_ics.build_vevent(make_event(link=None), TEST_NOW)
+        self.assertFalse(any(line.startswith("URL:") for line in lines))
+
+
+class BuildCalendarTests(unittest.TestCase):
+    def test_calendar_wraps_events(self):
+        text = generate_ics.build_calendar([make_event()], TEST_CONFIG, TEST_NOW)
+        self.assertTrue(text.startswith("BEGIN:VCALENDAR\r\n"))
+        self.assertTrue(text.endswith("END:VCALENDAR\r\n"))
+        self.assertIn("VERSION:2.0", text)
+        self.assertIn("X-WR-CALNAME:Pokémon GO Events", text)
+        self.assertIn("BEGIN:VEVENT", text)
+
+    def test_uses_crlf_line_endings_only(self):
+        text = generate_ics.build_calendar([make_event()], TEST_CONFIG, TEST_NOW)
+        self.assertNotIn("\n", text.replace("\r\n", ""))
+
+    def test_empty_calendar_is_valid(self):
+        text = generate_ics.build_calendar([], TEST_CONFIG, TEST_NOW)
+        self.assertIn("BEGIN:VCALENDAR", text)
+        self.assertNotIn("BEGIN:VEVENT", text)
+
+    def test_all_lines_at_most_75_octets(self):
+        event = make_event(name="N" * 200)
+        text = generate_ics.build_calendar([event], TEST_CONFIG, TEST_NOW)
+        for line in text.split("\r\n"):
+            self.assertLessEqual(len(line.encode("utf-8")), 75)
 
 
 if __name__ == "__main__":

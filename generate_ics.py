@@ -161,3 +161,39 @@ def build_description(event: dict) -> str:
         lines.append("")
         lines.append(event["link"])
     return "\n".join(lines)
+
+
+# --- ICS assembly ---
+
+
+def build_vevent(event: dict, now: datetime) -> list[str]:
+    """Build the folded content lines for one event."""
+    start, start_utc, end, end_utc = normalize_times(event)
+    properties = [
+        ("BEGIN", "VEVENT"),
+        ("UID", f"{event['eventID']}@scrapedduck"),
+        ("DTSTAMP", now.strftime("%Y%m%dT%H%M%SZ")),
+        ("DTSTART", format_dt(start, start_utc)),
+        ("DTEND", format_dt(end, end_utc)),
+        ("SUMMARY", escape_text(event["name"])),
+        ("DESCRIPTION", escape_text(build_description(event))),
+    ]
+    if event.get("link"):
+        properties.append(("URL", event["link"]))
+    properties.append(("END", "VEVENT"))
+    return [fold_line(f"{name}:{value}") for name, value in properties]
+
+
+def build_calendar(events: list[dict], config: dict, now: datetime) -> str:
+    """Build the complete ICS document as a CRLF-terminated string."""
+    lines = [
+        "BEGIN:VCALENDAR",
+        "VERSION:2.0",
+        "PRODID:-//PokemonCalendar//ScrapedDuck//EN",
+        "CALSCALE:GREGORIAN",
+        fold_line("X-WR-CALNAME:" + escape_text(config["calendarName"])),
+    ]
+    for event in events:
+        lines.extend(build_vevent(event, now))
+    lines.append("END:VCALENDAR")
+    return "\r\n".join(lines) + "\r\n"
