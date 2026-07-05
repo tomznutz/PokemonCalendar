@@ -1,0 +1,23 @@
+{
+  "calendarName": "Pokémon GO Events",
+  "includedEventTypes": [
+    "community-day",
+    "raid-day",
+    "raid-hour",
+    "pokemon-spotlight-hour",
+    "max-mondays",
+    "research",
+    "raid-battles",
+    "elite-raids",
+    "pokemon-go-fest",
+    "event",
+    "choose-your-path",
+    "research-breakthrough",
+    "ticketed-event",
+    "location-specific",
+    "live-event",
+    "bonus-hour",
+    "go-tour",
+    "safari-zone"
+  ]
+}
