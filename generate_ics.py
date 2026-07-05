@@ -102,3 +102,55 @@ def filter_events(events: list[dict], included_types: set[str]) -> list[dict]:
             continue
         kept.append(event)
     return kept
+
+
+# --- Calendar event content ---
+
+
+def build_description(event: dict) -> str:
+    """Assemble a plain-text description from the event's extraData.
+
+    ✨ marks Pokemon that can be shiny. Unknown extraData shapes are ignored
+    so upstream additions never break generation.
+    """
+    lines = [event.get("heading") or event.get("eventType") or "Event"]
+    extra = event.get("extraData") or {}
+
+    community_day = extra.get("communityday") or {}
+    spawns = [p["name"] for p in community_day.get("spawns") or []]
+    if spawns:
+        lines.append("Featured: " + ", ".join(spawns))
+    bonuses = [b["text"] for b in community_day.get("bonuses") or []]
+    if bonuses:
+        lines.append("Bonuses:")
+        lines.extend("• " + bonus for bonus in bonuses)
+    shinies = [s["name"] for s in community_day.get("shinies") or []]
+    if shinies:
+        lines.append("Shinies: " + ", ".join(shinies) + " ✨")
+
+    raid_battles = extra.get("raidbattles") or {}
+    bosses = [
+        boss["name"] + (" ✨" if boss.get("canBeShiny") else "")
+        for boss in raid_battles.get("bosses") or []
+    ]
+    if bosses:
+        lines.append("Bosses: " + ", ".join(bosses))
+
+    spotlight = extra.get("spotlight") or {}
+    if spotlight.get("name"):
+        lines.append(
+            "Featured: " + spotlight["name"] + (" ✨" if spotlight.get("canBeShiny") else "")
+        )
+    if spotlight.get("bonus"):
+        lines.append("Bonus: " + spotlight["bonus"])
+
+    breakthrough = extra.get("breakthrough") or {}
+    if breakthrough.get("name"):
+        lines.append(
+            "Reward: " + breakthrough["name"] + (" ✨" if breakthrough.get("canBeShiny") else "")
+        )
+
+    if event.get("link"):
+        lines.append("")
+        lines.append(event["link"])
+    return "\n".join(lines)

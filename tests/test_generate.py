@@ -150,5 +150,88 @@ class NormalizeTimesTests(unittest.TestCase):
         self.assertTrue(end_utc)
 
 
+class BuildDescriptionTests(unittest.TestCase):
+    def test_generic_event_has_heading_and_link(self):
+        desc = generate_ics.build_description(make_event())
+        self.assertIn("Raid Hour", desc)
+        self.assertIn("https://leekduck.com/events/test-event-1/", desc)
+
+    def test_community_day(self):
+        event = make_event(
+            heading="Community Day",
+            extraData={
+                "communityday": {
+                    "spawns": [{"name": "Sobble", "image": "x"}],
+                    "bonuses": [
+                        {"text": "Increased Spawns", "image": "x"},
+                        {"text": "2x Catch Candy", "image": "x"},
+                    ],
+                    "shinies": [
+                        {"name": "Sobble", "image": "x"},
+                        {"name": "Drizzile", "image": "x"},
+                    ],
+                },
+                "generic": {"hasSpawns": True, "hasFieldResearchTasks": True},
+            },
+        )
+        desc = generate_ics.build_description(event)
+        self.assertIn("Featured: Sobble", desc)
+        self.assertIn("• Increased Spawns", desc)
+        self.assertIn("• 2x Catch Candy", desc)
+        self.assertIn("Shinies: Sobble, Drizzile ✨", desc)
+
+    def test_raid_battles_marks_shiny_bosses(self):
+        event = make_event(
+            extraData={
+                "raidbattles": {
+                    "bosses": [
+                        {"name": "Articuno", "image": "x", "canBeShiny": True},
+                        {"name": "Zapdos", "image": "x", "canBeShiny": False},
+                    ],
+                    "shinies": [],
+                },
+                "generic": {"hasSpawns": False, "hasFieldResearchTasks": False},
+            }
+        )
+        desc = generate_ics.build_description(event)
+        self.assertIn("Bosses: Articuno ✨, Zapdos", desc)
+
+    def test_spotlight_hour(self):
+        event = make_event(
+            extraData={
+                "spotlight": {
+                    "name": "Zubat",
+                    "canBeShiny": True,
+                    "image": "x",
+                    "bonus": "2× Catch XP",
+                    "list": [{"name": "Zubat", "canBeShiny": True, "image": "x"}],
+                },
+                "generic": {"hasSpawns": True, "hasFieldResearchTasks": False},
+            }
+        )
+        desc = generate_ics.build_description(event)
+        self.assertIn("Featured: Zubat ✨", desc)
+        self.assertIn("Bonus: 2× Catch XP", desc)
+
+    def test_breakthrough(self):
+        event = make_event(
+            extraData={
+                "breakthrough": {"name": "Galarian Mr. Mime", "canBeShiny": False},
+                "generic": {"hasSpawns": False, "hasFieldResearchTasks": False},
+            }
+        )
+        desc = generate_ics.build_description(event)
+        self.assertIn("Reward: Galarian Mr. Mime", desc)
+        self.assertNotIn("Galarian Mr. Mime ✨", desc)
+
+    def test_tolerates_missing_extra_data(self):
+        desc = generate_ics.build_description(make_event(extraData=None))
+        self.assertIn("Raid Hour", desc)
+
+    def test_tolerates_missing_link(self):
+        desc = generate_ics.build_description(make_event(link=None))
+        self.assertIn("Raid Hour", desc)
+
+
 if __name__ == "__main__":
     unittest.main()
