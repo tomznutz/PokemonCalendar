@@ -62,6 +62,12 @@ class DatetimeTests(unittest.TestCase):
         self.assertEqual(dt, datetime(2026, 7, 4, 14, 0, 0))
         self.assertTrue(is_utc)
 
+    def test_parse_offset_datetime_normalizes_to_utc(self):
+        dt, is_utc = generate_ics.parse_dt("2026-07-04T16:30:00+02:30")
+        self.assertEqual(dt, datetime(2026, 7, 4, 14, 0, 0))
+        self.assertIsNone(dt.tzinfo)
+        self.assertTrue(is_utc)
+
     def test_format_floating(self):
         dt = datetime(2026, 7, 4, 14, 0, 0)
         self.assertEqual(generate_ics.format_dt(dt, is_utc=False), "20260704T140000")

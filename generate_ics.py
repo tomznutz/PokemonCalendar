@@ -58,7 +58,10 @@ def parse_dt(value: str) -> tuple[datetime, bool]:
     """Parse an ISO 8601 string into a naive datetime plus an is_utc flag."""
     if value.endswith("Z"):
         return datetime.fromisoformat(value[:-1]), True
-    return datetime.fromisoformat(value), False
+    dt = datetime.fromisoformat(value)
+    if dt.tzinfo is not None:
+        return dt.astimezone(timezone.utc).replace(tzinfo=None), True
+    return dt, False
 
 
 def format_dt(dt: datetime, is_utc: bool) -> str:
