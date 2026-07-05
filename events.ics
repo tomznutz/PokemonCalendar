@@ -5,7 +5,7 @@ CALSCALE:GREGORIAN
 X-WR-CALNAME:Pokémon GO Events
 BEGIN:VEVENT
 UID:july-communityday2026@scrapedduck
-DTSTAMP:20260705T063345Z
+DTSTAMP:20260705T063700Z
 DTSTART:20260704T140000
 DTEND:20260704T170000
 SUMMARY:Sobble Community Day
@@ -19,7 +19,7 @@ URL:https://leekduck.com/events/july-communityday2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:articuno-zapdos-moltres-in-5-star-raid-battles-july-2026@scrapedduck
-DTSTAMP:20260705T063345Z
+DTSTAMP:20260705T063700Z
 DTSTART:20260701T060000
 DTEND:20260705T220000
 SUMMARY:Articuno\, Zapdos\, and Moltres in 5-star Raid Battles
@@ -31,7 +31,7 @@ URL:https://leekduck.com/events/articuno-zapdos-moltres-in-5-star-raid-batt
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-lucario-in-mega-raids-july-2026@scrapedduck
-DTSTAMP:20260705T063345Z
+DTSTAMP:20260705T063700Z
 DTSTART:20260701T060000
 DTEND:20260705T220000
 SUMMARY:Mega Lucario in Mega Raids
@@ -41,7 +41,7 @@ URL:https://leekduck.com/events/mega-lucario-in-mega-raids-july-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:10th-anniversary-party@scrapedduck
-DTSTAMP:20260705T063345Z
+DTSTAMP:20260705T063700Z
 DTSTART:20260704T100000
 DTEND:20260706T200000
 SUMMARY:10th Anniversary Party
@@ -50,7 +50,7 @@ URL:https://leekduck.com/events/10th-anniversary-party/
 END:VEVENT
 BEGIN:VEVENT
 UID:max-mondays-2026-07-06@scrapedduck
-DTSTAMP:20260705T063345Z
+DTSTAMP:20260705T063700Z
 DTSTART:20260706T060000
 DTEND:20260706T210000
 SUMMARY:Dynamax Chansey during Max Monday
@@ -60,7 +60,7 @@ URL:https://leekduck.com/events/max-mondays-2026-07-06/
 END:VEVENT
 BEGIN:VEVENT
 UID:road-of-legends-2026@scrapedduck
-DTSTAMP:20260705T063345Z
+DTSTAMP:20260705T063700Z
 DTSTART:20260706T000100
 DTEND:20260710T235900
 SUMMARY:Road of Legends
@@ -69,7 +69,7 @@ URL:https://leekduck.com/events/road-of-legends-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemon-go-fest-2026-global@scrapedduck
-DTSTAMP:20260705T063345Z
+DTSTAMP:20260705T063700Z
 DTSTART:20260711T100000
 DTEND:20260712T190000
 SUMMARY:Pokémon GO Fest 2026: Global
@@ -79,7 +79,7 @@ URL:https://leekduck.com/events/pokemon-go-fest-2026-global/
 END:VEVENT
 BEGIN:VEVENT
 UID:max-mondays-2026-07-13@scrapedduck
-DTSTAMP:20260705T063345Z
+DTSTAMP:20260705T063700Z
 DTSTART:20260713T060000
 DTEND:20260713T210000
 SUMMARY:Dynamax Deino during Max Monday
@@ -89,7 +89,7 @@ URL:https://leekduck.com/events/max-mondays-2026-07-13/
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-lucario-in-mega-raids-july-13-2026@scrapedduck
-DTSTAMP:20260705T063345Z
+DTSTAMP:20260705T063700Z
 DTSTART:20260713T060000
 DTEND:20260714T220000
 SUMMARY:Mega Lucario in Mega Raids - July 13
@@ -99,7 +99,7 @@ URL:https://leekduck.com/events/mega-lucario-in-mega-raids-july-13-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:raidhour20260715@scrapedduck
-DTSTAMP:20260705T063345Z
+DTSTAMP:20260705T063700Z
 DTSTART:20260715T180000
 DTEND:20260715T190000
 SUMMARY:Kyogre Raid Hour
@@ -108,7 +108,7 @@ URL:https://leekduck.com/events/raidhour20260715/
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemonspotlighthour2026-07-16@scrapedduck
-DTSTAMP:20260705T063345Z
+DTSTAMP:20260705T063700Z
 DTSTART:20260716T180000
 DTEND:20260716T190000
 SUMMARY:Zubat Spotlight Hour
@@ -118,7 +118,7 @@ URL:https://leekduck.com/events/pokemonspotlighthour2026-07-16/
 END:VEVENT
 BEGIN:VEVENT
 UID:raichu-super-mega-raid-day-2026@scrapedduck
-DTSTAMP:20260705T063345Z
+DTSTAMP:20260705T063700Z
 DTSTART:20260718T140000
 DTEND:20260718T170000
 SUMMARY:Raichu Super Mega Raid Day
@@ -128,7 +128,7 @@ URL:https://leekduck.com/events/raichu-super-mega-raid-day-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:special-anniversary-pikachu-celebration-2026@scrapedduck
-DTSTAMP:20260705T063345Z
+DTSTAMP:20260705T063700Z
 DTSTART:20260713T100000
 DTEND:20260720T200000
 SUMMARY:Special Anniversary Pikachu Celebration
@@ -139,7 +139,7 @@ URL:https://leekduck.com/events/special-anniversary-pikachu-celebration-202
 END:VEVENT
 BEGIN:VEVENT
 UID:max-mondays-2026-07-20@scrapedduck
-DTSTAMP:20260705T063345Z
+DTSTAMP:20260705T063700Z
 DTSTART:20260720T060000
 DTEND:20260720T210000
 SUMMARY:Dynamax Trubbish during Max Monday
@@ -149,7 +149,7 @@ URL:https://leekduck.com/events/max-mondays-2026-07-20/
 END:VEVENT
 BEGIN:VEVENT
 UID:happy-birthday-professor-willow-2026@scrapedduck
-DTSTAMP:20260705T063345Z
+DTSTAMP:20260705T063700Z
 DTSTART:20260721T100000
 DTEND:20260721T200000
 SUMMARY:Happy Birthday\, Professor Willow!
@@ -159,7 +159,7 @@ URL:https://leekduck.com/events/happy-birthday-professor-willow-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:kyogre-in-5-star-raid-battles-july-2026@scrapedduck
-DTSTAMP:20260705T063345Z
+DTSTAMP:20260705T063700Z
 DTSTART:20260715T060000
 DTEND:20260721T220000
 SUMMARY:Kyogre in 5-star Raid Battles
@@ -169,7 +169,7 @@ URL:https://leekduck.com/events/kyogre-in-5-star-raid-battles-july-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-sceptile-in-mega-raids-july-2026@scrapedduck
-DTSTAMP:20260705T063345Z
+DTSTAMP:20260705T063700Z
 DTSTART:20260715T060000
 DTEND:20260721T220000
 SUMMARY:Mega Sceptile in Mega Raids
@@ -179,7 +179,7 @@ URL:https://leekduck.com/events/mega-sceptile-in-mega-raids-july-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:raidhour20260722@scrapedduck
-DTSTAMP:20260705T063345Z
+DTSTAMP:20260705T063700Z
 DTSTART:20260722T180000
 DTEND:20260722T190000
 SUMMARY:Solgaleo Raid Hour
@@ -188,7 +188,7 @@ URL:https://leekduck.com/events/raidhour20260722/
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemonspotlighthour2026-07-23@scrapedduck
-DTSTAMP:20260705T063345Z
+DTSTAMP:20260705T063700Z
 DTSTART:20260723T180000
 DTEND:20260723T190000
 SUMMARY:Eevee Spotlight Hour
@@ -198,7 +198,7 @@ URL:https://leekduck.com/events/pokemonspotlighthour2026-07-23/
 END:VEVENT
 BEGIN:VEVENT
 UID:ozone-ascent-2026@scrapedduck
-DTSTAMP:20260705T063345Z
+DTSTAMP:20260705T063700Z
 DTSTART:20260725T100000
 DTEND:20260726T200000
 SUMMARY:Ozone Ascent
@@ -207,7 +207,7 @@ URL:https://leekduck.com/events/ozone-ascent-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:max-mondays-2026-07-27@scrapedduck
-DTSTAMP:20260705T063345Z
+DTSTAMP:20260705T063700Z
 DTSTART:20260727T060000
 DTEND:20260727T210000
 SUMMARY:Dynamax Feebas during Max Monday
@@ -217,7 +217,7 @@ URL:https://leekduck.com/events/max-mondays-2026-07-27/
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-salamence-in-mega-raids-july-2026@scrapedduck
-DTSTAMP:20260705T063345Z
+DTSTAMP:20260705T063700Z
 DTSTART:20260722T060000
 DTEND:20260728T220000
 SUMMARY:Mega Salamence in Mega Raids
@@ -227,7 +227,7 @@ URL:https://leekduck.com/events/mega-salamence-in-mega-raids-july-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:solgaleo-in-5-star-raid-battles-july-2026@scrapedduck
-DTSTAMP:20260705T063345Z
+DTSTAMP:20260705T063700Z
 DTSTART:20260722T060000
 DTEND:20260728T220000
 SUMMARY:Solgaleo in 5-star Raid Battles
@@ -237,7 +237,7 @@ URL:https://leekduck.com/events/solgaleo-in-5-star-raid-battles-july-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:raidhour20260729@scrapedduck
-DTSTAMP:20260705T063345Z
+DTSTAMP:20260705T063700Z
 DTSTART:20260729T180000
 DTEND:20260729T190000
 SUMMARY:Kyurem Raid Hour
@@ -246,7 +246,7 @@ URL:https://leekduck.com/events/raidhour20260729/
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemonspotlighthour2026-07-30@scrapedduck
-DTSTAMP:20260705T063345Z
+DTSTAMP:20260705T063700Z
 DTSTART:20260730T180000
 DTEND:20260730T190000
 SUMMARY:Bidoof Spotlight Hour
@@ -256,7 +256,7 @@ URL:https://leekduck.com/events/pokemonspotlighthour2026-07-30/
 END:VEVENT
 BEGIN:VEVENT
 UID:choose-your-path-fairy-trail-2026@scrapedduck
-DTSTAMP:20260705T063345Z
+DTSTAMP:20260705T063700Z
 DTSTART:20260728T100000
 DTEND:20260803T200000
 SUMMARY:Choose Your Path: Fairy Trail
@@ -266,7 +266,7 @@ URL:https://leekduck.com/events/choose-your-path-fairy-trail-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:shadow-palkia-in-shadow-raids-july-2026@scrapedduck
-DTSTAMP:20260705T063345Z
+DTSTAMP:20260705T063700Z
 DTSTART:20260701T060000
 DTEND:20260804T220000
 SUMMARY:Shadow Palkia in Shadow Raids
@@ -276,7 +276,7 @@ URL:https://leekduck.com/events/shadow-palkia-in-shadow-raids-july-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:kyurem-in-5-star-raid-battles-july-2026@scrapedduck
-DTSTAMP:20260705T063345Z
+DTSTAMP:20260705T063700Z
 DTSTART:20260729T060000
 DTEND:20260804T220000
 SUMMARY:Kyurem in 5-star Raid Battles
@@ -286,7 +286,7 @@ URL:https://leekduck.com/events/kyurem-in-5-star-raid-battles-july-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-aggron-in-mega-raids-july-2026@scrapedduck
-DTSTAMP:20260705T063345Z
+DTSTAMP:20260705T063700Z
 DTSTART:20260729T060000
 DTEND:20260804T220000
 SUMMARY:Mega Aggron in Mega Raids
@@ -296,7 +296,7 @@ URL:https://leekduck.com/events/mega-aggron-in-mega-raids-july-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:hatch-day-august-2026@scrapedduck
-DTSTAMP:20260705T063345Z
+DTSTAMP:20260705T063700Z
 DTSTART:20260808T110000
 DTEND:20260808T170000
 SUMMARY:Hatch Day
@@ -305,7 +305,7 @@ URL:https://leekduck.com/events/hatch-day-august-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:august-communityday2026@scrapedduck
-DTSTAMP:20260705T063345Z
+DTSTAMP:20260705T063700Z
 DTSTART:20260816T140000
 DTEND:20260816T170000
 SUMMARY:August Community Day
@@ -315,7 +315,7 @@ URL:https://leekduck.com/events/august-communityday2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:choose-your-path-venom-and-vines-2026@scrapedduck
-DTSTAMP:20260705T063345Z
+DTSTAMP:20260705T063700Z
 DTSTART:20260811T100000
 DTEND:20260817T200000
 SUMMARY:Choose Your Path: Venom and Vines
@@ -325,7 +325,7 @@ URL:https://leekduck.com/events/choose-your-path-venom-and-vines-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:raid-day-august-2026@scrapedduck
-DTSTAMP:20260705T063345Z
+DTSTAMP:20260705T063700Z
 DTSTART:20260822T140000
 DTEND:20260822T170000
 SUMMARY:Raid Day
@@ -334,7 +334,7 @@ URL:https://leekduck.com/events/raid-day-august-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:example_event@scrapedduck
-DTSTAMP:20260705T063345Z
+DTSTAMP:20260705T063700Z
 DTSTART:20261201T100000
 DTEND:20261202T200000
 SUMMARY:Example Event Template (Auto ToC Demo)
