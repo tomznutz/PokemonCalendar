@@ -197,3 +197,26 @@ def build_calendar(events: list[dict], config: dict, now: datetime) -> str:
         lines.extend(build_vevent(event, now))
     lines.append("END:VCALENDAR")
     return "\r\n".join(lines) + "\r\n"
+
+
+# --- Fetch and entry point ---
+
+
+def fetch_events(url: str = EVENTS_URL) -> list[dict]:
+    with urllib.request.urlopen(url, timeout=30) as response:
+        return json.load(response)
+
+
+def main(fetch=fetch_events, output_path: Path = REPO_ROOT / "events.ics") -> None:
+    config = json.loads((REPO_ROOT / "config.json").read_text(encoding="utf-8"))
+    events = fetch()
+    if not events:
+        sys.exit("error: event feed is empty - upstream problem, keeping existing events.ics")
+    included = filter_events(events, set(config["includedEventTypes"]))
+    ics = build_calendar(included, config, datetime.now(timezone.utc))
+    output_path.write_bytes(ics.encode("utf-8"))
+    print(f"wrote {output_path} with {len(included)} of {len(events)} events")
+
+
+if __name__ == "__main__":
+    main()

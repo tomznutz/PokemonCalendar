@@ -1,5 +1,8 @@
+import os
+import tempfile
 import unittest
 from datetime import datetime, timedelta, timezone
+from pathlib import Path
 
 import generate_ics
 
@@ -304,6 +307,43 @@ class BuildCalendarTests(unittest.TestCase):
         text = generate_ics.build_calendar([event], TEST_CONFIG, TEST_NOW)
         for line in text.split("\r\n"):
             self.assertLessEqual(len(line.encode("utf-8")), 75)
+
+
+class MainTests(unittest.TestCase):
+    def _run_main(self, events):
+        out_dir = Path(tempfile.mkdtemp())
+        out_path = out_dir / "events.ics"
+        generate_ics.main(fetch=lambda: events, output_path=out_path)
+        return out_path
+
+    def test_writes_ics_file(self):
+        out_path = self._run_main([make_event(eventType="raid-hour")])
+        text = out_path.read_bytes().decode("utf-8")
+        self.assertIn("BEGIN:VCALENDAR\r\n", text)
+        self.assertIn("UID:test-event-1@scrapedduck", text)
+
+    def test_excluded_types_are_absent(self):
+        out_path = self._run_main(
+            [make_event(eventType="go-battle-league", eventID="gbl-1")]
+        )
+        self.assertNotIn("gbl-1", out_path.read_text(encoding="utf-8"))
+
+    def test_empty_feed_exits_nonzero(self):
+        with self.assertRaises(SystemExit):
+            self._run_main([])
+
+
+@unittest.skipUnless(os.environ.get("LIVE_TESTS"), "set LIVE_TESTS=1 to run network tests")
+class LiveFeedTests(unittest.TestCase):
+    def test_live_feed_produces_events(self):
+        events = generate_ics.fetch_events()
+        self.assertGreater(len(events), 0)
+        config = {"calendarName": "Test", "includedEventTypes": ["community-day", "raid-hour", "event", "raid-battles"]}
+        included = generate_ics.filter_events(events, set(config["includedEventTypes"]))
+        text = generate_ics.build_calendar(
+            included, config, datetime.now(timezone.utc)
+        )
+        self.assertIn("BEGIN:VEVENT", text)
 
 
 if __name__ == "__main__":
