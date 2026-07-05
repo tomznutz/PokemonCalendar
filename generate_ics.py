@@ -68,3 +68,34 @@ def format_dt(dt: datetime, is_utc: bool) -> str:
     """Format a naive datetime as an ICS DATE-TIME (floating or UTC)."""
     formatted = dt.strftime("%Y%m%dT%H%M%S")
     return formatted + "Z" if is_utc else formatted
+
+
+# --- Event selection ---
+
+
+def normalize_times(event: dict) -> tuple[datetime, bool, datetime, bool]:
+    """Return (start, start_is_utc, end, end_is_utc); end defaults to start+1h."""
+    start, start_utc = parse_dt(event["start"])
+    if event.get("end"):
+        end, end_utc = parse_dt(event["end"])
+    else:
+        end, end_utc = start + timedelta(hours=1), start_utc
+    return start, start_utc, end, end_utc
+
+
+def filter_events(events: list[dict], included_types: set[str]) -> list[dict]:
+    """Keep allowlisted events whose times are present and parseable."""
+    kept = []
+    for event in events:
+        if event.get("eventType") not in included_types:
+            continue
+        if not event.get("start"):
+            print(f"warning: skipping {event.get('eventID')!r}: no start time", file=sys.stderr)
+            continue
+        try:
+            normalize_times(event)
+        except ValueError:
+            print(f"warning: skipping {event.get('eventID')!r}: bad datetime", file=sys.stderr)
+            continue
+        kept.append(event)
+    return kept

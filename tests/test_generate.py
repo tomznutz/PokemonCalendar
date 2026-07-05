@@ -1,5 +1,5 @@
 import unittest
-from datetime import datetime
+from datetime import datetime, timedelta
 
 import generate_ics
 
@@ -75,6 +75,66 @@ class DatetimeTests(unittest.TestCase):
     def test_format_utc(self):
         dt = datetime(2026, 7, 4, 14, 0, 0)
         self.assertEqual(generate_ics.format_dt(dt, is_utc=True), "20260704T140000Z")
+
+
+def make_event(**overrides):
+    """A minimal valid ScrapedDuck event for tests."""
+    event = {
+        "eventID": "test-event-1",
+        "name": "Test Event",
+        "eventType": "raid-hour",
+        "heading": "Raid Hour",
+        "link": "https://leekduck.com/events/test-event-1/",
+        "image": "https://example.com/img.jpg",
+        "start": "2026-07-15T18:00:00",
+        "end": "2026-07-15T19:00:00",
+        "extraData": {"generic": {"hasSpawns": False, "hasFieldResearchTasks": False}},
+    }
+    event.update(overrides)
+    return event
+
+
+class FilterEventsTests(unittest.TestCase):
+    def test_keeps_allowlisted_types_only(self):
+        events = [
+            make_event(eventID="a", eventType="raid-hour"),
+            make_event(eventID="b", eventType="go-battle-league"),
+            make_event(eventID="c", eventType="community-day"),
+        ]
+        kept = generate_ics.filter_events(events, {"raid-hour", "community-day"})
+        self.assertEqual([e["eventID"] for e in kept], ["a", "c"])
+
+    def test_skips_event_with_no_start(self):
+        events = [make_event(start=None)]
+        self.assertEqual(generate_ics.filter_events(events, {"raid-hour"}), [])
+
+    def test_skips_event_with_unparseable_start(self):
+        events = [make_event(start="not-a-date"), make_event(eventID="ok")]
+        kept = generate_ics.filter_events(events, {"raid-hour"})
+        self.assertEqual([e["eventID"] for e in kept], ["ok"])
+
+
+class NormalizeTimesTests(unittest.TestCase):
+    def test_start_and_end_parsed(self):
+        start, start_utc, end, end_utc = generate_ics.normalize_times(make_event())
+        self.assertEqual(start, datetime(2026, 7, 15, 18, 0, 0))
+        self.assertEqual(end, datetime(2026, 7, 15, 19, 0, 0))
+        self.assertFalse(start_utc)
+        self.assertFalse(end_utc)
+
+    def test_missing_end_defaults_to_one_hour(self):
+        start, start_utc, end, end_utc = generate_ics.normalize_times(
+            make_event(end=None)
+        )
+        self.assertEqual(end - start, timedelta(hours=1))
+        self.assertEqual(end_utc, start_utc)
+
+    def test_utc_event(self):
+        start, start_utc, end, end_utc = generate_ics.normalize_times(
+            make_event(start="2026-07-15T18:00:00Z", end="2026-07-15T19:00:00Z")
+        )
+        self.assertTrue(start_utc)
+        self.assertTrue(end_utc)
 
 
 if __name__ == "__main__":
