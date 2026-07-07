@@ -130,6 +130,12 @@ class FilterEventsTests(unittest.TestCase):
         kept = generate_ics.filter_events(events, {"raid-hour"})
         self.assertEqual([e["eventID"] for e in kept], ["ok"])
 
+    def test_skips_non_dict_entries(self):
+        kept = generate_ics.filter_events(
+            ["not-a-dict", None, make_event(eventID="ok")], {"raid-hour"}
+        )
+        self.assertEqual([e["eventID"] for e in kept], ["ok"])
+
     def test_skips_event_missing_id_or_name(self):
         no_id = make_event()
         del no_id["eventID"]

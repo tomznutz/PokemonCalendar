@@ -88,6 +88,9 @@ def filter_events(events: list[dict], included_types: set[str]) -> list[dict]:
     """Keep allowlisted events whose times are present and parseable."""
     kept = []
     for event in events:
+        if not isinstance(event, dict):
+            print(f"warning: skipping non-dict feed entry: {event!r}", file=sys.stderr)
+            continue
         if event.get("eventType") not in included_types:
             continue
         if not event.get("eventID") or not event.get("name"):

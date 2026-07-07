@@ -11,7 +11,7 @@ workflow regenerates [`events.ics`](events.ics) every 12 hours.
 
 1. Open [Google Calendar settings → Add calendar → From URL](https://calendar.google.com/calendar/u/0/r/settings/addbyurl).
 2. Paste the raw feed URL:
-   `https://raw.githubusercontent.com/<USER>/<REPO>/master/events.ics`
+   `https://raw.githubusercontent.com/<USER>/<REPO>/main/events.ics`
 3. Click **Add calendar**. Events appear within a day and refresh automatically
    (Google polls subscribed calendars roughly every 12–48 hours).
 
