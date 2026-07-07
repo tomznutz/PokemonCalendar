@@ -1,0 +1,234 @@
+"""Generate a Google Calendar-subscribable .ics feed of Pokemon GO events.
+
+Data source: ScrapedDuck (https://github.com/bigfoott/ScrapedDuck), which
+scrapes LeekDuck event listings. Stdlib only by design - see the spec in
+docs/superpowers/specs/.
+"""
+
+import json
+import sys
+import urllib.error
+import urllib.request
+from datetime import datetime, timedelta, timezone
+from pathlib import Path
+
+EVENTS_URL = "https://raw.githubusercontent.com/bigfoott/ScrapedDuck/data/events.min.json"
+REPO_ROOT = Path(__file__).parent
+
+# --- ICS text primitives (RFC 5545 sections 3.3.11 and 3.1) ---
+
+
+def escape_text(value: str) -> str:
+    """Escape a string for use as an ICS TEXT property value."""
+    return (
+        value.replace("\\", "\\\\")
+        .replace(";", "\\;")
+        .replace(",", "\\,")
+        .replace("\r\n", "\\n")
+        .replace("\n", "\\n")
+    )
+
+
+def fold_line(line: str) -> str:
+    """Fold a content line to physical lines of at most 75 octets (UTF-8 safe).
+
+    Continuation lines begin with a single space that counts toward the limit.
+    """
+    parts = []
+    current = ""
+    octets = 0
+    for ch in line:
+        ch_octets = len(ch.encode("utf-8"))
+        if octets + ch_octets > 75:
+            parts.append(current)
+            current = " "
+            octets = 1
+        current += ch
+        octets += ch_octets
+    parts.append(current)
+    return "\r\n".join(parts)
+
+
+# --- Datetime handling ---
+# ScrapedDuck times are usually timezone-less, meaning "local time wherever
+# the player is" (e.g. Community Day at 14:00 everywhere). Those become
+# floating ICS times. A trailing "Z" marks a genuinely global UTC moment.
+
+
+def parse_dt(value: str) -> tuple[datetime, bool]:
+    """Parse an ISO 8601 string into a naive datetime plus an is_utc flag."""
+    if value.endswith("Z"):
+        return datetime.fromisoformat(value[:-1]), True
+    dt = datetime.fromisoformat(value)
+    if dt.tzinfo is not None:
+        return dt.astimezone(timezone.utc).replace(tzinfo=None), True
+    return dt, False
+
+
+def format_dt(dt: datetime, is_utc: bool) -> str:
+    """Format a naive datetime as an ICS DATE-TIME (floating or UTC)."""
+    formatted = dt.strftime("%Y%m%dT%H%M%S")
+    return formatted + "Z" if is_utc else formatted
+
+
+# --- Event selection ---
+
+
+def normalize_times(event: dict) -> tuple[datetime, bool, datetime, bool]:
+    """Return (start, start_is_utc, end, end_is_utc); end defaults to start+1h."""
+    start, start_utc = parse_dt(event["start"])
+    if event.get("end"):
+        end, end_utc = parse_dt(event["end"])
+    else:
+        end, end_utc = start + timedelta(hours=1), start_utc
+    return start, start_utc, end, end_utc
+
+
+def filter_events(events: list[dict], included_types: set[str]) -> list[dict]:
+    """Keep allowlisted events whose times are present and parseable."""
+    kept = []
+    for event in events:
+        if not isinstance(event, dict):
+            print(f"warning: skipping non-dict feed entry: {event!r}", file=sys.stderr)
+            continue
+        if event.get("eventType") not in included_types:
+            continue
+        if not event.get("eventID") or not event.get("name"):
+            print(f"warning: skipping event with missing eventID/name: {event.get('eventID') or event.get('name')!r}", file=sys.stderr)
+            continue
+        if not event.get("start"):
+            print(f"warning: skipping {event.get('eventID')!r}: no start time", file=sys.stderr)
+            continue
+        try:
+            start, _, end, _ = normalize_times(event)
+        except ValueError:
+            print(f"warning: skipping {event.get('eventID')!r}: bad datetime", file=sys.stderr)
+            continue
+        if end < start:
+            print(f"warning: skipping {event.get('eventID')!r}: end before start", file=sys.stderr)
+            continue
+        kept.append(event)
+    return kept
+
+
+# --- Calendar event content ---
+
+
+def _texts(items: list | None, key: str = "name") -> list[str]:
+    """Pull a text field from a list of dicts, skipping items that lack it."""
+    return [item.get(key) for item in items or [] if item.get(key)]
+
+
+def build_description(event: dict) -> str:
+    """Assemble a plain-text description from the event's extraData.
+
+    ✨ marks Pokemon that can be shiny. Unknown extraData shapes are ignored
+    so upstream additions never break generation.
+    """
+    lines = [event.get("heading") or event.get("eventType") or "Event"]
+    extra = event.get("extraData") or {}
+
+    community_day = extra.get("communityday") or {}
+    spawns = _texts(community_day.get("spawns"))
+    if spawns:
+        lines.append("Featured: " + ", ".join(spawns))
+    bonuses = _texts(community_day.get("bonuses"), key="text")
+    if bonuses:
+        lines.append("Bonuses:")
+        lines.extend("• " + bonus for bonus in bonuses)
+    shinies = _texts(community_day.get("shinies"))
+    if shinies:
+        lines.append("Shinies: " + ", ".join(shinies) + " ✨")
+
+    raid_battles = extra.get("raidbattles") or {}
+    bosses = [
+        name + (" ✨" if boss.get("canBeShiny") else "")
+        for boss in raid_battles.get("bosses") or []
+        for name in [boss.get("name")]
+        if name
+    ]
+    if bosses:
+        lines.append("Bosses: " + ", ".join(bosses))
+
+    spotlight = extra.get("spotlight") or {}
+    if spotlight.get("name"):
+        lines.append(
+            "Featured: " + spotlight["name"] + (" ✨" if spotlight.get("canBeShiny") else "")
+        )
+    if spotlight.get("bonus"):
+        lines.append("Bonus: " + spotlight["bonus"])
+
+    breakthrough = extra.get("breakthrough") or {}
+    if breakthrough.get("name"):
+        lines.append(
+            "Reward: " + breakthrough["name"] + (" ✨" if breakthrough.get("canBeShiny") else "")
+        )
+
+    if event.get("link"):
+        lines.append("")
+        lines.append(event["link"])
+    return "\n".join(lines)
+
+
+# --- ICS assembly ---
+
+
+def build_vevent(event: dict, now: datetime) -> list[str]:
+    """Build the folded content lines for one event."""
+    start, start_utc, end, end_utc = normalize_times(event)
+    properties = [
+        ("BEGIN", "VEVENT"),
+        ("UID", f"{event['eventID']}@scrapedduck"),
+        ("DTSTAMP", now.astimezone(timezone.utc).strftime("%Y%m%dT%H%M%SZ")),
+        ("DTSTART", format_dt(start, start_utc)),
+        ("DTEND", format_dt(end, end_utc)),
+        ("SUMMARY", escape_text(event["name"])),
+        ("DESCRIPTION", escape_text(build_description(event))),
+    ]
+    if event.get("link"):
+        properties.append(("URL", event["link"]))
+    properties.append(("END", "VEVENT"))
+    return [fold_line(f"{name}:{value}") for name, value in properties]
+
+
+def build_calendar(events: list[dict], config: dict, now: datetime) -> str:
+    """Build the complete ICS document as a CRLF-terminated string."""
+    lines = [
+        "BEGIN:VCALENDAR",
+        "VERSION:2.0",
+        "PRODID:-//PokemonCalendar//ScrapedDuck//EN",
+        "CALSCALE:GREGORIAN",
+        fold_line("X-WR-CALNAME:" + escape_text(config["calendarName"])),
+    ]
+    for event in events:
+        lines.extend(build_vevent(event, now))
+    lines.append("END:VCALENDAR")
+    return "\r\n".join(lines) + "\r\n"
+
+
+# --- Fetch and entry point ---
+
+
+def fetch_events(url: str = EVENTS_URL) -> list[dict]:
+    with urllib.request.urlopen(url, timeout=30) as response:
+        return json.load(response)
+
+
+def main(fetch=fetch_events, output_path: Path = REPO_ROOT / "events.ics") -> None:
+    config = json.loads((REPO_ROOT / "config.json").read_text(encoding="utf-8"))
+    try:
+        events = fetch()
+    except (urllib.error.URLError, json.JSONDecodeError, TimeoutError, OSError) as e:
+        sys.exit(f"error: failed to fetch event feed: {e}")
+    if not isinstance(events, list):
+        sys.exit(f"error: event feed is not a list (got {type(events).__name__}) - upstream problem")
+    if not events:
+        sys.exit("error: event feed is empty - upstream problem, keeping existing events.ics")
+    included = filter_events(events, set(config["includedEventTypes"]))
+    ics = build_calendar(included, config, datetime.now(timezone.utc))
+    output_path.write_bytes(ics.encode("utf-8"))
+    print(f"wrote {output_path} with {len(included)} of {len(events)} events")
+
+
+if __name__ == "__main__":
+    main()
