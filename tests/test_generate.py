@@ -1,6 +1,7 @@
 import os
 import tempfile
 import unittest
+import urllib.error
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -127,6 +128,15 @@ class FilterEventsTests(unittest.TestCase):
             make_event(eventID="ok"),
         ]
         kept = generate_ics.filter_events(events, {"raid-hour"})
+        self.assertEqual([e["eventID"] for e in kept], ["ok"])
+
+    def test_skips_event_missing_id_or_name(self):
+        no_id = make_event()
+        del no_id["eventID"]
+        no_name = make_event(name=None)
+        kept = generate_ics.filter_events(
+            [no_id, no_name, make_event(eventID="ok")], {"raid-hour"}
+        )
         self.assertEqual([e["eventID"] for e in kept], ["ok"])
 
 
@@ -331,6 +341,18 @@ class MainTests(unittest.TestCase):
     def test_empty_feed_exits_nonzero(self):
         with self.assertRaises(SystemExit):
             self._run_main([])
+
+    def test_fetch_failure_exits_with_clear_message(self):
+        def failing_fetch():
+            raise urllib.error.URLError("connection refused")
+        with self.assertRaises(SystemExit) as ctx:
+            generate_ics.main(fetch=failing_fetch, output_path=Path(tempfile.mkdtemp()) / "events.ics")
+        self.assertIn("failed to fetch", str(ctx.exception))
+
+    def test_non_list_feed_exits_nonzero(self):
+        with self.assertRaises(SystemExit) as ctx:
+            self._run_main({"error": "not found"})
+        self.assertIn("not a list", str(ctx.exception))
 
 
 @unittest.skipUnless(os.environ.get("LIVE_TESTS"), "set LIVE_TESTS=1 to run network tests")

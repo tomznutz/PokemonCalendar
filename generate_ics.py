@@ -7,6 +7,7 @@ docs/superpowers/specs/.
 
 import json
 import sys
+import urllib.error
 import urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -88,6 +89,9 @@ def filter_events(events: list[dict], included_types: set[str]) -> list[dict]:
     kept = []
     for event in events:
         if event.get("eventType") not in included_types:
+            continue
+        if not event.get("eventID") or not event.get("name"):
+            print(f"warning: skipping event with missing eventID/name: {event.get('eventID') or event.get('name')!r}", file=sys.stderr)
             continue
         if not event.get("start"):
             print(f"warning: skipping {event.get('eventID')!r}: no start time", file=sys.stderr)
@@ -209,7 +213,12 @@ def fetch_events(url: str = EVENTS_URL) -> list[dict]:
 
 def main(fetch=fetch_events, output_path: Path = REPO_ROOT / "events.ics") -> None:
     config = json.loads((REPO_ROOT / "config.json").read_text(encoding="utf-8"))
-    events = fetch()
+    try:
+        events = fetch()
+    except (urllib.error.URLError, json.JSONDecodeError, TimeoutError, OSError) as e:
+        sys.exit(f"error: failed to fetch event feed: {e}")
+    if not isinstance(events, list):
+        sys.exit(f"error: event feed is not a list (got {type(events).__name__}) - upstream problem")
     if not events:
         sys.exit("error: event feed is empty - upstream problem, keeping existing events.ics")
     included = filter_events(events, set(config["includedEventTypes"]))
