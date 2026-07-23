@@ -4,38 +4,8 @@ PRODID:-//PokemonCalendar//ScrapedDuck//EN
 CALSCALE:GREGORIAN
 X-WR-CALNAME:Pokémon GO Events
 BEGIN:VEVENT
-UID:happy-birthday-professor-willow-2026@scrapedduck
-DTSTAMP:20260722T014935Z
-DTSTART:20260721T100000
-DTEND:20260721T200000
-SUMMARY:Happy Birthday\, Professor Willow!
-DESCRIPTION:Event\n\nhttps://leekduck.com/events/happy-birthday-professor-w
- illow-2026/
-URL:https://leekduck.com/events/happy-birthday-professor-willow-2026/
-END:VEVENT
-BEGIN:VEVENT
-UID:kyogre-in-5-star-raid-battles-july-2026@scrapedduck
-DTSTAMP:20260722T014935Z
-DTSTART:20260715T060000
-DTEND:20260721T220000
-SUMMARY:Kyogre in 5-star Raid Battles
-DESCRIPTION:Raid Battles\nBosses: Kyogre ✨\n\nhttps://leekduck.com/events
- /kyogre-in-5-star-raid-battles-july-2026/
-URL:https://leekduck.com/events/kyogre-in-5-star-raid-battles-july-2026/
-END:VEVENT
-BEGIN:VEVENT
-UID:mega-sceptile-in-mega-raids-july-2026@scrapedduck
-DTSTAMP:20260722T014935Z
-DTSTART:20260715T060000
-DTEND:20260721T220000
-SUMMARY:Mega Sceptile in Mega Raids
-DESCRIPTION:Raid Battles\nBosses: Mega Sceptile ✨\n\nhttps://leekduck.com
- /events/mega-sceptile-in-mega-raids-july-2026/
-URL:https://leekduck.com/events/mega-sceptile-in-mega-raids-july-2026/
-END:VEVENT
-BEGIN:VEVENT
 UID:raidhour20260722@scrapedduck
-DTSTAMP:20260722T014935Z
+DTSTAMP:20260723T015646Z
 DTSTART:20260722T180000
 DTEND:20260722T190000
 SUMMARY:Solgaleo Raid Hour
@@ -44,7 +14,7 @@ URL:https://leekduck.com/events/raidhour20260722/
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemonspotlighthour2026-07-23@scrapedduck
-DTSTAMP:20260722T014935Z
+DTSTAMP:20260723T015646Z
 DTSTART:20260723T180000
 DTEND:20260723T190000
 SUMMARY:Eevee Spotlight Hour
@@ -54,7 +24,7 @@ URL:https://leekduck.com/events/pokemonspotlighthour2026-07-23/
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemon-go-fest-2026-global-sunday-raid-makeup@scrapedduck
-DTSTAMP:20260722T014935Z
+DTSTAMP:20260723T015646Z
 DTSTART:20260726T100000
 DTEND:20260726T190000
 SUMMARY:GO Fest 2026 Sunday Raid Makeup
@@ -65,7 +35,7 @@ URL:https://leekduck.com/events/pokemon-go-fest-2026-global-sunday-raid-mak
 END:VEVENT
 BEGIN:VEVENT
 UID:ozone-ascent-2026@scrapedduck
-DTSTAMP:20260722T014935Z
+DTSTAMP:20260723T015646Z
 DTSTART:20260725T100000
 DTEND:20260726T200000
 SUMMARY:Ozone Ascent
@@ -74,7 +44,7 @@ URL:https://leekduck.com/events/ozone-ascent-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:ultra-unlock-10th-anniversary-edition@scrapedduck
-DTSTAMP:20260722T014935Z
+DTSTAMP:20260723T015646Z
 DTSTART:20260721T100000
 DTEND:20260727T200000
 SUMMARY:Ultra Unlock: 10th Anniversary Edition
@@ -84,7 +54,7 @@ URL:https://leekduck.com/events/ultra-unlock-10th-anniversary-edition/
 END:VEVENT
 BEGIN:VEVENT
 UID:max-mondays-2026-07-27@scrapedduck
-DTSTAMP:20260722T014935Z
+DTSTAMP:20260723T015646Z
 DTSTART:20260727T060000
 DTEND:20260727T210000
 SUMMARY:Dynamax Feebas during Max Monday
@@ -94,7 +64,7 @@ URL:https://leekduck.com/events/max-mondays-2026-07-27/
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-salamence-in-mega-raids-july-2026@scrapedduck
-DTSTAMP:20260722T014935Z
+DTSTAMP:20260723T015646Z
 DTSTART:20260722T060000
 DTEND:20260728T220000
 SUMMARY:Mega Salamence in Mega Raids
@@ -104,7 +74,7 @@ URL:https://leekduck.com/events/mega-salamence-in-mega-raids-july-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:solgaleo-in-5-star-raid-battles-july-2026@scrapedduck
-DTSTAMP:20260722T014935Z
+DTSTAMP:20260723T015646Z
 DTSTART:20260722T060000
 DTEND:20260728T220000
 SUMMARY:Solgaleo in 5-star Raid Battles
@@ -114,7 +84,7 @@ URL:https://leekduck.com/events/solgaleo-in-5-star-raid-battles-july-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:raidhour20260729@scrapedduck
-DTSTAMP:20260722T014935Z
+DTSTAMP:20260723T015646Z
 DTSTART:20260729T180000
 DTEND:20260729T190000
 SUMMARY:Kyurem Raid Hour
@@ -123,7 +93,7 @@ URL:https://leekduck.com/events/raidhour20260729/
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemonspotlighthour2026-07-30@scrapedduck
-DTSTAMP:20260722T014935Z
+DTSTAMP:20260723T015646Z
 DTSTART:20260730T180000
 DTEND:20260730T190000
 SUMMARY:Bidoof Spotlight Hour
@@ -133,7 +103,7 @@ URL:https://leekduck.com/events/pokemonspotlighthour2026-07-30/
 END:VEVENT
 BEGIN:VEVENT
 UID:choose-your-path-fairy-trail-2026@scrapedduck
-DTSTAMP:20260722T014935Z
+DTSTAMP:20260723T015646Z
 DTSTART:20260728T100000
 DTEND:20260803T200000
 SUMMARY:Choose Your Path: Fairy Trail
@@ -142,8 +112,18 @@ DESCRIPTION:Choose Your Path\n\nhttps://leekduck.com/events/choose-your-pat
 URL:https://leekduck.com/events/choose-your-path-fairy-trail-2026/
 END:VEVENT
 BEGIN:VEVENT
+UID:max-mondays-2026-08-03@scrapedduck
+DTSTAMP:20260723T015646Z
+DTSTART:20260803T060000
+DTEND:20260803T210000
+SUMMARY:Dynamax Magmar during Max Monday
+DESCRIPTION:Max Mondays\n\nhttps://leekduck.com/events/max-mondays-2026-08-
+ 03/
+URL:https://leekduck.com/events/max-mondays-2026-08-03/
+END:VEVENT
+BEGIN:VEVENT
 UID:shadow-palkia-in-shadow-raids-july-2026@scrapedduck
-DTSTAMP:20260722T014935Z
+DTSTAMP:20260723T015646Z
 DTSTART:20260701T060000
 DTEND:20260804T220000
 SUMMARY:Shadow Palkia in Shadow Raids
@@ -153,7 +133,7 @@ URL:https://leekduck.com/events/shadow-palkia-in-shadow-raids-july-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:kyurem-in-5-star-raid-battles-july-2026@scrapedduck
-DTSTAMP:20260722T014935Z
+DTSTAMP:20260723T015646Z
 DTSTART:20260729T060000
 DTEND:20260804T220000
 SUMMARY:Kyurem in 5-star Raid Battles
@@ -163,7 +143,7 @@ URL:https://leekduck.com/events/kyurem-in-5-star-raid-battles-july-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-aggron-in-mega-raids-july-2026@scrapedduck
-DTSTAMP:20260722T014935Z
+DTSTAMP:20260723T015646Z
 DTSTART:20260729T060000
 DTEND:20260804T220000
 SUMMARY:Mega Aggron in Mega Raids
@@ -172,8 +152,17 @@ DESCRIPTION:Raid Battles\nBosses: Mega Aggron ✨\n\nhttps://leekduck.com/e
 URL:https://leekduck.com/events/mega-aggron-in-mega-raids-july-2026/
 END:VEVENT
 BEGIN:VEVENT
+UID:raidhour20260805@scrapedduck
+DTSTAMP:20260723T015646Z
+DTSTART:20260805T180000
+DTEND:20260805T190000
+SUMMARY:Uxie\, Mesprit\, and Azelf Raid Hour
+DESCRIPTION:Raid Hour\n\nhttps://leekduck.com/events/raidhour20260805/
+URL:https://leekduck.com/events/raidhour20260805/
+END:VEVENT
+BEGIN:VEVENT
 UID:fire-and-ice-hatch-day-2026@scrapedduck
-DTSTAMP:20260722T014935Z
+DTSTAMP:20260723T015646Z
 DTSTART:20260808T110000
 DTEND:20260808T170000
 SUMMARY:Fire and Ice Hatch Day
@@ -183,7 +172,7 @@ URL:https://leekduck.com/events/fire-and-ice-hatch-day-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:summer-marathon-2026@scrapedduck
-DTSTAMP:20260722T014935Z
+DTSTAMP:20260723T015646Z
 DTSTART:20260804T100000
 DTEND:20260810T200000
 SUMMARY:Summer Marathon: Arctic Embers
@@ -191,8 +180,49 @@ DESCRIPTION:Event\n\nhttps://leekduck.com/events/summer-marathon-2026/
 URL:https://leekduck.com/events/summer-marathon-2026/
 END:VEVENT
 BEGIN:VEVENT
+UID:max-mondays-2026-08-10@scrapedduck
+DTSTAMP:20260723T015646Z
+DTSTART:20260810T060000
+DTEND:20260810T210000
+SUMMARY:Dynamax Beldum during Max Monday
+DESCRIPTION:Max Mondays\n\nhttps://leekduck.com/events/max-mondays-2026-08-
+ 10/
+URL:https://leekduck.com/events/max-mondays-2026-08-10/
+END:VEVENT
+BEGIN:VEVENT
+UID:mega-blaziken-in-mega-raids-august-2026@scrapedduck
+DTSTAMP:20260723T015646Z
+DTSTART:20260805T060000
+DTEND:20260811T220000
+SUMMARY:Mega Blaziken in Mega Raids
+DESCRIPTION:Raid Battles\nBosses: Mega Blaziken ✨\n\nhttps://leekduck.com
+ /events/mega-blaziken-in-mega-raids-august-2026/
+URL:https://leekduck.com/events/mega-blaziken-in-mega-raids-august-2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:uxie-mesprit-azelf-in-5-star-raid-battles-august-2026@scrapedduck
+DTSTAMP:20260723T015646Z
+DTSTART:20260805T060000
+DTEND:20260811T220000
+SUMMARY:Uxie\, Mesprit\, and Azelf in 5-star Raid Battles
+DESCRIPTION:Raid Battles\nBosses: Uxie ✨\, Mesprit ✨\, Azelf ✨\n\nhtt
+ ps://leekduck.com/events/uxie-mesprit-azelf-in-5-star-raid-battles-august-
+ 2026/
+URL:https://leekduck.com/events/uxie-mesprit-azelf-in-5-star-raid-battles-a
+ ugust-2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:raidhour20260812@scrapedduck
+DTSTAMP:20260723T015646Z
+DTSTART:20260812T180000
+DTEND:20260812T190000
+SUMMARY:Groudon Raid Hour
+DESCRIPTION:Raid Hour\n\nhttps://leekduck.com/events/raidhour20260812/
+URL:https://leekduck.com/events/raidhour20260812/
+END:VEVENT
+BEGIN:VEVENT
 UID:august-communityday2026@scrapedduck
-DTSTAMP:20260722T014935Z
+DTSTAMP:20260723T015646Z
 DTSTART:20260816T140000
 DTEND:20260816T170000
 SUMMARY:Nickit Community Day
@@ -206,7 +236,7 @@ URL:https://leekduck.com/events/august-communityday2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:choose-your-path-venom-and-vines-2026@scrapedduck
-DTSTAMP:20260722T014935Z
+DTSTAMP:20260723T015646Z
 DTSTART:20260811T100000
 DTEND:20260817T200000
 SUMMARY:Choose Your Path: Venom and Vines
@@ -215,8 +245,47 @@ DESCRIPTION:Choose Your Path\n\nhttps://leekduck.com/events/choose-your-pat
 URL:https://leekduck.com/events/choose-your-path-venom-and-vines-2026/
 END:VEVENT
 BEGIN:VEVENT
+UID:max-mondays-2026-08-17@scrapedduck
+DTSTAMP:20260723T015646Z
+DTSTART:20260817T060000
+DTEND:20260817T210000
+SUMMARY:Dynamax Magikarp during Max Monday
+DESCRIPTION:Max Mondays\n\nhttps://leekduck.com/events/max-mondays-2026-08-
+ 17/
+URL:https://leekduck.com/events/max-mondays-2026-08-17/
+END:VEVENT
+BEGIN:VEVENT
+UID:groudon-in-5-star-raid-battles-august-2026@scrapedduck
+DTSTAMP:20260723T015646Z
+DTSTART:20260812T060000
+DTEND:20260818T220000
+SUMMARY:Groudon in 5-star Raid Battles
+DESCRIPTION:Raid Battles\nBosses: Groudon ✨\n\nhttps://leekduck.com/event
+ s/groudon-in-5-star-raid-battles-august-2026/
+URL:https://leekduck.com/events/groudon-in-5-star-raid-battles-august-2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:mega-garchomp-in-mega-raids-august-2026@scrapedduck
+DTSTAMP:20260723T015646Z
+DTSTART:20260812T060000
+DTEND:20260818T220000
+SUMMARY:Mega Garchomp in Mega Raids
+DESCRIPTION:Raid Battles\nBosses: Mega Garchomp ✨\n\nhttps://leekduck.com
+ /events/mega-garchomp-in-mega-raids-august-2026/
+URL:https://leekduck.com/events/mega-garchomp-in-mega-raids-august-2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:raidhour20260819@scrapedduck
+DTSTAMP:20260723T015646Z
+DTSTART:20260819T180000
+DTEND:20260819T190000
+SUMMARY:Lunala Raid Hour
+DESCRIPTION:Raid Hour\n\nhttps://leekduck.com/events/raidhour20260819/
+URL:https://leekduck.com/events/raidhour20260819/
+END:VEVENT
+BEGIN:VEVENT
 UID:starmie-super-mega-raid-day-2026@scrapedduck
-DTSTAMP:20260722T014935Z
+DTSTAMP:20260723T015646Z
 DTSTART:20260822T110000
 DTEND:20260822T170000
 SUMMARY:Starmie Super Mega Raid Day
@@ -226,11 +295,112 @@ URL:https://leekduck.com/events/starmie-super-mega-raid-day-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:water-festival-2026@scrapedduck
-DTSTAMP:20260722T014935Z
+DTSTAMP:20260723T015646Z
 DTSTART:20260818T100000
 DTEND:20260824T200000
 SUMMARY:Ultra Unlock: Water Festival
 DESCRIPTION:Event\n\nhttps://leekduck.com/events/water-festival-2026/
 URL:https://leekduck.com/events/water-festival-2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:max-mondays-2026-08-24@scrapedduck
+DTSTAMP:20260723T015646Z
+DTSTART:20260824T060000
+DTEND:20260824T210000
+SUMMARY:Dynamax Hitmontop during Max Monday
+DESCRIPTION:Max Mondays\n\nhttps://leekduck.com/events/max-mondays-2026-08-
+ 24/
+URL:https://leekduck.com/events/max-mondays-2026-08-24/
+END:VEVENT
+BEGIN:VEVENT
+UID:lunala-in-5-star-raid-battles-august-2026@scrapedduck
+DTSTAMP:20260723T015646Z
+DTSTART:20260819T060000
+DTEND:20260825T220000
+SUMMARY:Lunala in 5-star Raid Battles
+DESCRIPTION:Raid Battles\nBosses: Lunala ✨\n\nhttps://leekduck.com/events
+ /lunala-in-5-star-raid-battles-august-2026/
+URL:https://leekduck.com/events/lunala-in-5-star-raid-battles-august-2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:mega-swampert-in-mega-raids-august-2026@scrapedduck
+DTSTAMP:20260723T015646Z
+DTSTART:20260819T060000
+DTEND:20260825T220000
+SUMMARY:Mega Swampert in Mega Raids
+DESCRIPTION:Raid Battles\nBosses: Mega Swampert ✨\n\nhttps://leekduck.com
+ /events/mega-swampert-in-mega-raids-august-2026/
+URL:https://leekduck.com/events/mega-swampert-in-mega-raids-august-2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:raidhour20260826@scrapedduck
+DTSTAMP:20260723T015646Z
+DTSTART:20260826T180000
+DTEND:20260826T190000
+SUMMARY:Regirock\, Regice\, and Registeel Raid Hour
+DESCRIPTION:Raid Hour\n\nhttps://leekduck.com/events/raidhour20260826/
+URL:https://leekduck.com/events/raidhour20260826/
+END:VEVENT
+BEGIN:VEVENT
+UID:pokemon-xp-2026-worlds@scrapedduck
+DTSTAMP:20260723T015646Z
+DTSTART:20260825T100000
+DTEND:20260830T200000
+SUMMARY:Pokémon XP &amp\; 2026 Worlds
+DESCRIPTION:Event\n\nhttps://leekduck.com/events/pokemon-xp-2026-worlds/
+URL:https://leekduck.com/events/pokemon-xp-2026-worlds/
+END:VEVENT
+BEGIN:VEVENT
+UID:max-mondays-2026-08-31@scrapedduck
+DTSTAMP:20260723T015646Z
+DTSTART:20260831T060000
+DTEND:20260831T210000
+SUMMARY:Dynamax Eevee during Max Monday
+DESCRIPTION:Max Mondays\n\nhttps://leekduck.com/events/max-mondays-2026-08-
+ 31/
+URL:https://leekduck.com/events/max-mondays-2026-08-31/
+END:VEVENT
+BEGIN:VEVENT
+UID:raidhour20260902@scrapedduck
+DTSTAMP:20260723T015646Z
+DTSTART:20260902T180000
+DTEND:20260902T190000
+SUMMARY:Regirock\, Regice\, and Registeel Raid Hour
+DESCRIPTION:Raid Hour\n\nhttps://leekduck.com/events/raidhour20260902/
+URL:https://leekduck.com/events/raidhour20260902/
+END:VEVENT
+BEGIN:VEVENT
+UID:shadow-giratina-altered-in-shadow-raids-august-2026@scrapedduck
+DTSTAMP:20260723T015646Z
+DTSTART:20260805T060000
+DTEND:20260908T220000
+SUMMARY:Shadow Giratina (Altered Forme) in Shadow Raids
+DESCRIPTION:Raid Battles\nBosses: Giratina (Altered) ✨\n\nhttps://leekduc
+ k.com/events/shadow-giratina-altered-in-shadow-raids-august-2026/
+URL:https://leekduck.com/events/shadow-giratina-altered-in-shadow-raids-aug
+ ust-2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:mega-gyarados-in-mega-raids-august-2026@scrapedduck
+DTSTAMP:20260723T015646Z
+DTSTART:20260826T060000
+DTEND:20260908T220000
+SUMMARY:Mega Gyarados in Mega Raids
+DESCRIPTION:Raid Battles\nBosses: Mega Gyarados ✨\n\nhttps://leekduck.com
+ /events/mega-gyarados-in-mega-raids-august-2026/
+URL:https://leekduck.com/events/mega-gyarados-in-mega-raids-august-2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:regirock-regice-registeel-in-5-star-raid-battles-august-2026@scrapedduc
+ k
+DTSTAMP:20260723T015646Z
+DTSTART:20260826T060000
+DTEND:20260908T220000
+SUMMARY:Regirock\, Regice\, and Registeel in 5-star Raid Battles
+DESCRIPTION:Raid Battles\nBosses: Regirock ✨\, Regice ✨\, Registeel ✨
+ \n\nhttps://leekduck.com/events/regirock-regice-registeel-in-5-star-raid-b
+ attles-august-2026/
+URL:https://leekduck.com/events/regirock-regice-registeel-in-5-star-raid-ba
+ ttles-august-2026/
 END:VEVENT
 END:VCALENDAR
