@@ -4,17 +4,8 @@ PRODID:-//PokemonCalendar//ScrapedDuck//EN
 CALSCALE:GREGORIAN
 X-WR-CALNAME:Pokémon GO Events
 BEGIN:VEVENT
-UID:raidhour20260902@scrapedduck
-DTSTAMP:20260903T021119Z
-DTSTART:20260902T180000
-DTEND:20260902T190000
-SUMMARY:Regirock\, Regice\, and Registeel Raid Hour
-DESCRIPTION:Raid Hour\n\nhttps://leekduck.com/events/raidhour20260902/
-URL:https://leekduck.com/events/raidhour20260902/
-END:VEVENT
-BEGIN:VEVENT
 UID:mega-ascension@scrapedduck
-DTSTAMP:20260903T021119Z
+DTSTAMP:20260904T152826Z
 DTSTART:20260831T100000
 DTEND:20260904T235900
 SUMMARY:Mega Ascension
@@ -23,7 +14,7 @@ URL:https://leekduck.com/events/mega-ascension/
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemon-go-fest-2026-mega-finale@scrapedduck
-DTSTAMP:20260903T021119Z
+DTSTAMP:20260904T152826Z
 DTSTART:20260905T100000
 DTEND:20260906T180000
 SUMMARY:Pokémon GO Fest 2026: Mega Finale
@@ -33,7 +24,7 @@ URL:https://leekduck.com/events/pokemon-go-fest-2026-mega-finale/
 END:VEVENT
 BEGIN:VEVENT
 UID:armored-mewtwo-in-5-star-raid-battles-september-2026@scrapedduck
-DTSTAMP:20260903T021119Z
+DTSTAMP:20260904T152826Z
 DTSTART:20260905T100000
 DTEND:20260906T180000
 SUMMARY:Armored Mewtwo in 5-star Raid Battles
@@ -44,7 +35,7 @@ URL:https://leekduck.com/events/armored-mewtwo-in-5-star-raid-battles-septe
 END:VEVENT
 BEGIN:VEVENT
 UID:10th-anniversary-celebration@scrapedduck
-DTSTAMP:20260903T021119Z
+DTSTAMP:20260904T152826Z
 DTSTART:20260812T160000
 DTEND:20260906T235900
 SUMMARY:10th Anniversary Celebration - Perfect Mewtwo Timed Research
@@ -54,7 +45,7 @@ URL:https://leekduck.com/events/10th-anniversary-celebration/
 END:VEVENT
 BEGIN:VEVENT
 UID:max-mondays-2026-09-07@scrapedduck
-DTSTAMP:20260903T021119Z
+DTSTAMP:20260904T152826Z
 DTSTART:20260907T060000
 DTEND:20260907T210000
 SUMMARY:Dynamax Ralts during Max Monday
@@ -64,7 +55,7 @@ URL:https://leekduck.com/events/max-mondays-2026-09-07/
 END:VEVENT
 BEGIN:VEVENT
 UID:shadow-giratina-altered-in-shadow-raids-august-2026@scrapedduck
-DTSTAMP:20260903T021119Z
+DTSTAMP:20260904T152826Z
 DTSTART:20260805T060000
 DTEND:20260908T220000
 SUMMARY:Shadow Giratina (Altered Forme) in Shadow Raids
@@ -75,7 +66,7 @@ URL:https://leekduck.com/events/shadow-giratina-altered-in-shadow-raids-aug
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-gyarados-in-mega-raids-august-2026@scrapedduck
-DTSTAMP:20260903T021119Z
+DTSTAMP:20260904T152826Z
 DTSTART:20260826T060000
 DTEND:20260908T220000
 SUMMARY:Mega Gyarados in Mega Raids
@@ -86,7 +77,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:regirock-regice-registeel-in-5-star-raid-battles-august-2026@scrapedduc
  k
-DTSTAMP:20260903T021119Z
+DTSTAMP:20260904T152826Z
 DTSTART:20260826T060000
 DTEND:20260908T220000
 SUMMARY:Regirock\, Regice\, and Registeel in 5-star Raid Battles
@@ -98,7 +89,7 @@ URL:https://leekduck.com/events/regirock-regice-registeel-in-5-star-raid-ba
 END:VEVENT
 BEGIN:VEVENT
 UID:raidhour20260909@scrapedduck
-DTSTAMP:20260903T021119Z
+DTSTAMP:20260904T152826Z
 DTSTART:20260909T180000
 DTEND:20260909T190000
 SUMMARY:Zacian (Hero of Many Battles) Raid Hour
@@ -107,7 +98,7 @@ URL:https://leekduck.com/events/raidhour20260909/
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemonspotlighthour2026-09-10@scrapedduck
-DTSTAMP:20260903T021119Z
+DTSTAMP:20260904T152826Z
 DTSTART:20260910T180000
 DTEND:20260910T190000
 SUMMARY:Weedle\, Kakuna\, and Beedrill Spotlight Hour
@@ -117,7 +108,7 @@ URL:https://leekduck.com/events/pokemonspotlighthour2026-09-10/
 END:VEVENT
 BEGIN:VEVENT
 UID:september-communitydayclassic2026@scrapedduck
-DTSTAMP:20260903T021119Z
+DTSTAMP:20260904T152826Z
 DTSTART:20260912T140000
 DTEND:20260912T170000
 SUMMARY:Gible Community Day Classic
@@ -129,7 +120,7 @@ URL:https://leekduck.com/events/september-communitydayclassic2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemonspotlighthour2026-09-13@scrapedduck
-DTSTAMP:20260903T021119Z
+DTSTAMP:20260904T152826Z
 DTSTART:20260913T180000
 DTEND:20260913T190000
 SUMMARY:Houndour and Houndoom Spotlight Hour
@@ -139,7 +130,7 @@ URL:https://leekduck.com/events/pokemonspotlighthour2026-09-13/
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-squads@scrapedduck
-DTSTAMP:20260903T021119Z
+DTSTAMP:20260904T152826Z
 DTSTART:20260908T100000
 DTEND:20260914T200000
 SUMMARY:Mega Squads
@@ -148,7 +139,7 @@ URL:https://leekduck.com/events/mega-squads/
 END:VEVENT
 BEGIN:VEVENT
 UID:max-mondays-2026-09-14@scrapedduck
-DTSTAMP:20260903T021119Z
+DTSTAMP:20260904T152826Z
 DTSTART:20260914T060000
 DTEND:20260914T210000
 SUMMARY:Dynamax Rhyhorn during Max Monday
@@ -158,7 +149,7 @@ URL:https://leekduck.com/events/max-mondays-2026-09-14/
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-beedrill-in-mega-raids-september-2026@scrapedduck
-DTSTAMP:20260903T021119Z
+DTSTAMP:20260904T152826Z
 DTSTART:20260908T060000
 DTEND:20260915T220000
 SUMMARY:Mega Beedrill in Mega Raids
@@ -169,7 +160,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:zacian-hero-of-many-battles-in-5-star-raid-battles-september-2026@scrap
  edduck
-DTSTAMP:20260903T021119Z
+DTSTAMP:20260904T152826Z
 DTSTART:20260909T060000
 DTEND:20260915T220000
 SUMMARY:Zacian (Hero of Many Battles) in 5-star Raid Battles
@@ -181,7 +172,7 @@ URL:https://leekduck.com/events/zacian-hero-of-many-battles-in-5-star-raid-
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-houndoom-in-mega-raids-september-2026@scrapedduck
-DTSTAMP:20260903T021119Z
+DTSTAMP:20260904T152826Z
 DTSTART:20260911T060000
 DTEND:20260915T220000
 SUMMARY:Mega Houndoom in Mega Raids
@@ -191,7 +182,7 @@ URL:https://leekduck.com/events/mega-houndoom-in-mega-raids-september-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:raidhour20260916@scrapedduck
-DTSTAMP:20260903T021119Z
+DTSTAMP:20260904T152826Z
 DTSTART:20260916T180000
 DTEND:20260916T190000
 SUMMARY:Zamazenta (Hero of Many Battles) Raid Hour
@@ -200,7 +191,7 @@ URL:https://leekduck.com/events/raidhour20260916/
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemonspotlighthour2026-09-17@scrapedduck
-DTSTAMP:20260903T021119Z
+DTSTAMP:20260904T152826Z
 DTSTART:20260917T180000
 DTEND:20260917T190000
 SUMMARY:Mystery Pokémon Spotlight Hour
@@ -210,7 +201,7 @@ URL:https://leekduck.com/events/pokemonspotlighthour2026-09-17/
 END:VEVENT
 BEGIN:VEVENT
 UID:staraptor-super-mega-raid-day-2026@scrapedduck
-DTSTAMP:20260903T021119Z
+DTSTAMP:20260904T152826Z
 DTSTART:20260919T140000
 DTEND:20260919T170000
 SUMMARY:Staraptor Super Mega Raid Day
@@ -220,7 +211,7 @@ URL:https://leekduck.com/events/staraptor-super-mega-raid-day-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:max-mondays-2026-09-21@scrapedduck
-DTSTAMP:20260903T021119Z
+DTSTAMP:20260904T152826Z
 DTSTART:20260921T060000
 DTEND:20260921T210000
 SUMMARY:Dynamax Articuno\, Zapdos\, and Moltres during Max Monday
@@ -230,7 +221,7 @@ URL:https://leekduck.com/events/max-mondays-2026-09-21/
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemon-horizons-the-series-celebration-event-2026@scrapedduck
-DTSTAMP:20260903T021119Z
+DTSTAMP:20260904T152826Z
 DTSTART:20260916T100000
 DTEND:20260922T200000
 SUMMARY:Pokémon Horizons: The Series Celebration Event
@@ -241,7 +232,7 @@ URL:https://leekduck.com/events/pokemon-horizons-the-series-celebration-eve
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-venusaur-in-mega-raids-september-2026@scrapedduck
-DTSTAMP:20260903T021119Z
+DTSTAMP:20260904T152826Z
 DTSTART:20260916T060000
 DTEND:20260922T220000
 SUMMARY:Mega Venusaur in Mega Raids
@@ -252,7 +243,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:zamazenta-hero-of-many-battles-in-5-star-raid-battles-september-2026@sc
  rapedduck
-DTSTAMP:20260903T021119Z
+DTSTAMP:20260904T152826Z
 DTSTART:20260916T060000
 DTEND:20260922T220000
 SUMMARY:Zamazenta (Hero of Many Battles) in 5-star Raid Battles
@@ -264,7 +255,7 @@ URL:https://leekduck.com/events/zamazenta-hero-of-many-battles-in-5-star-ra
 END:VEVENT
 BEGIN:VEVENT
 UID:raidhour20260923@scrapedduck
-DTSTAMP:20260903T021119Z
+DTSTAMP:20260904T152826Z
 DTSTART:20260923T180000
 DTEND:20260923T190000
 SUMMARY:Xurkitree\, Pheromosa\, and Buzzwole Raid Hour
@@ -273,7 +264,7 @@ URL:https://leekduck.com/events/raidhour20260923/
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemonspotlighthour2026-09-24@scrapedduck
-DTSTAMP:20260903T021119Z
+DTSTAMP:20260904T152826Z
 DTSTART:20260924T180000
 DTEND:20260924T190000
 SUMMARY:Rattata Spotlight Hour
@@ -283,7 +274,7 @@ URL:https://leekduck.com/events/pokemonspotlighthour2026-09-24/
 END:VEVENT
 BEGIN:VEVENT
 UID:catch-mastery-phantump-2026@scrapedduck
-DTSTAMP:20260903T021119Z
+DTSTAMP:20260904T152826Z
 DTSTART:20260926T100000
 DTEND:20260926T200000
 SUMMARY:Phantump Catch Mastery
@@ -293,7 +284,7 @@ URL:https://leekduck.com/events/catch-mastery-phantump-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:max-mondays-2026-09-28@scrapedduck
-DTSTAMP:20260903T021119Z
+DTSTAMP:20260904T152826Z
 DTSTART:20260928T060000
 DTEND:20260928T210000
 SUMMARY:Dynamax Sobble during Max Monday
@@ -303,7 +294,7 @@ URL:https://leekduck.com/events/max-mondays-2026-09-28/
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-malamar-in-mega-raids-september-2026@scrapedduck
-DTSTAMP:20260903T021119Z
+DTSTAMP:20260904T152826Z
 DTSTART:20260923T060000
 DTEND:20260929T220000
 SUMMARY:Mega Malamar in Mega Raids
@@ -314,7 +305,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:xurkitree-pheromosa-buzzwole-in-5-star-raid-battles-september-2026@scra
  pedduck
-DTSTAMP:20260903T021119Z
+DTSTAMP:20260904T152826Z
 DTSTART:20260923T060000
 DTEND:20260929T220000
 SUMMARY:Xurkitree\, Pheromosa\, and Buzzwole in 5-star Raid Battles
@@ -326,7 +317,7 @@ URL:https://leekduck.com/events/xurkitree-pheromosa-buzzwole-in-5-star-raid
 END:VEVENT
 BEGIN:VEVENT
 UID:raidhour20260930@scrapedduck
-DTSTAMP:20260903T021119Z
+DTSTAMP:20260904T152826Z
 DTSTART:20260930T180000
 DTEND:20260930T190000
 SUMMARY:Xerneas Raid Hour
@@ -335,7 +326,7 @@ URL:https://leekduck.com/events/raidhour20260930/
 END:VEVENT
 BEGIN:VEVENT
 UID:lego-pokemon-go-2026@scrapedduck
-DTSTAMP:20260903T021119Z
+DTSTAMP:20260904T152826Z
 DTSTART:20260803T100000
 DTEND:20260930T235900
 SUMMARY:LEGO Stores and Pokémon GO
@@ -344,7 +335,7 @@ URL:https://leekduck.com/events/lego-pokemon-go-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:harvest-festival-2026@scrapedduck
-DTSTAMP:20260903T021119Z
+DTSTAMP:20260904T152826Z
 DTSTART:20260929T100000
 DTEND:20261005T200000
 SUMMARY:Harvest Festival
@@ -354,7 +345,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:shadow-thundurus-incarnate-forme-in-shadow-raids-september-2026@scraped
  duck
-DTSTAMP:20260903T021119Z
+DTSTAMP:20260904T152826Z
 DTSTART:20260909T060000
 DTEND:20261006T220000
 SUMMARY:Shadow Thundurus (Incarnate Forme) in Shadow Raids
@@ -366,7 +357,7 @@ URL:https://leekduck.com/events/shadow-thundurus-incarnate-forme-in-shadow-
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-victreebel-in-mega-raids-september-2026@scrapedduck
-DTSTAMP:20260903T021119Z
+DTSTAMP:20260904T152826Z
 DTSTART:20260930T060000
 DTEND:20261006T220000
 SUMMARY:Mega Victreebel in Mega Raids
@@ -377,7 +368,7 @@ URL:https://leekduck.com/events/mega-victreebel-in-mega-raids-september-202
 END:VEVENT
 BEGIN:VEVENT
 UID:xerneas-in-5-star-raid-battles-september-2026@scrapedduck
-DTSTAMP:20260903T021119Z
+DTSTAMP:20260904T152826Z
 DTSTART:20260930T060000
 DTEND:20261006T220000
 SUMMARY:Xerneas in 5-star Raid Battles
@@ -388,7 +379,7 @@ URL:https://leekduck.com/events/xerneas-in-5-star-raid-battles-september-20
 END:VEVENT
 BEGIN:VEVENT
 UID:october-communityday2026@scrapedduck
-DTSTAMP:20260903T021119Z
+DTSTAMP:20260904T152826Z
 DTSTART:20261010T140000
 DTEND:20261010T170000
 SUMMARY:October Community Day
@@ -398,7 +389,7 @@ URL:https://leekduck.com/events/october-communityday2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:hatch-day-october-2026@scrapedduck
-DTSTAMP:20260903T021119Z
+DTSTAMP:20260904T152826Z
 DTSTART:20261017T110000
 DTEND:20261017T170000
 SUMMARY:Hatch Day
@@ -407,7 +398,7 @@ URL:https://leekduck.com/events/hatch-day-october-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:super-mega-raid-day-october-2026@scrapedduck
-DTSTAMP:20260903T021119Z
+DTSTAMP:20260904T152826Z
 DTSTART:20261031T140000
 DTEND:20261031T170000
 SUMMARY:Super Mega Raid Day
@@ -417,7 +408,7 @@ URL:https://leekduck.com/events/super-mega-raid-day-october-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:november-communityday2026@scrapedduck
-DTSTAMP:20260903T021119Z
+DTSTAMP:20260904T152826Z
 DTSTART:20261121T140000
 DTEND:20261121T170000
 SUMMARY:November Community Day
@@ -427,7 +418,7 @@ URL:https://leekduck.com/events/november-communityday2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:super-mega-raid-day-november-2026@scrapedduck
-DTSTAMP:20260903T021119Z
+DTSTAMP:20260904T152826Z
 DTSTART:20261128T140000
 DTEND:20261128T170000
 SUMMARY:Super Mega Raid Day
