@@ -4,18 +4,8 @@ PRODID:-//PokemonCalendar//ScrapedDuck//EN
 CALSCALE:GREGORIAN
 X-WR-CALNAME:Pokémon GO Events
 BEGIN:VEVENT
-UID:max-mondays-2026-10-12@scrapedduck
-DTSTAMP:20261012T032542Z
-DTSTART:20261012T060000
-DTEND:20261012T210000
-SUMMARY:Dynamax Rookidee during Max Monday
-DESCRIPTION:Max Mondays\n\nhttps://leekduck.com/events/max-mondays-2026-10-
- 12/
-URL:https://leekduck.com/events/max-mondays-2026-10-12/
-END:VEVENT
-BEGIN:VEVENT
 UID:mega-blastoise-in-mega-raids-october-2026@scrapedduck
-DTSTAMP:20261012T032542Z
+DTSTAMP:20261013T184038Z
 DTSTART:20261007T060000
 DTEND:20261013T220000
 SUMMARY:Mega Blastoise in Mega Raids
@@ -25,7 +15,7 @@ URL:https://leekduck.com/events/mega-blastoise-in-mega-raids-october-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:yveltal-in-5-star-raid-battles-october-2026@scrapedduck
-DTSTAMP:20261012T032542Z
+DTSTAMP:20261013T184038Z
 DTSTART:20261007T060000
 DTEND:20261013T220000
 SUMMARY:Yveltal in 5-star Raid Battles
@@ -36,7 +26,7 @@ URL:https://leekduck.com/events/yveltal-in-5-star-raid-battles-october-2026
 END:VEVENT
 BEGIN:VEVENT
 UID:raidhour20261014@scrapedduck
-DTSTAMP:20261012T032542Z
+DTSTAMP:20261013T184038Z
 DTSTART:20261014T180000
 DTEND:20261014T190000
 SUMMARY:Dialga Raid Hour
@@ -45,7 +35,7 @@ URL:https://leekduck.com/events/raidhour20261014/
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemonspotlighthour2026-10-15@scrapedduck
-DTSTAMP:20261012T032542Z
+DTSTAMP:20261013T184038Z
 DTSTART:20261015T180000
 DTEND:20261015T190000
 SUMMARY:Stufful Spotlight Hour
@@ -55,7 +45,7 @@ URL:https://leekduck.com/events/pokemonspotlighthour2026-10-15/
 END:VEVENT
 BEGIN:VEVENT
 UID:sandile-hatch-day-2026@scrapedduck
-DTSTAMP:20261012T032542Z
+DTSTAMP:20261013T184038Z
 DTSTART:20261017T110000
 DTEND:20261017T170000
 SUMMARY:Sandile Hatch Day
@@ -64,7 +54,7 @@ URL:https://leekduck.com/events/sandile-hatch-day-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:fall-marathon-buddy-trek-2026@scrapedduck
-DTSTAMP:20261012T032542Z
+DTSTAMP:20261013T184038Z
 DTSTART:20261013T100000
 DTEND:20261019T200000
 SUMMARY:Fall Marathon: Buddy Trek
@@ -74,7 +64,7 @@ URL:https://leekduck.com/events/fall-marathon-buddy-trek-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:max-mondays-2026-10-19@scrapedduck
-DTSTAMP:20261012T032542Z
+DTSTAMP:20261013T184038Z
 DTSTART:20261019T060000
 DTEND:20261019T210000
 SUMMARY:Dynamax Sneasel during Max Monday
@@ -84,7 +74,7 @@ URL:https://leekduck.com/events/max-mondays-2026-10-19/
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemon-tcg-30th-celebration@scrapedduck
-DTSTAMP:20261012T032542Z
+DTSTAMP:20261013T184038Z
 DTSTART:20260927T100000
 DTEND:20261020T220000
 SUMMARY:Pokémon TCG: 30th Celebration
@@ -94,7 +84,7 @@ URL:https://leekduck.com/events/pokemon-tcg-30th-celebration/
 END:VEVENT
 BEGIN:VEVENT
 UID:dialga-in-5-star-raid-battles-october-2026@scrapedduck
-DTSTAMP:20261012T032542Z
+DTSTAMP:20261013T184038Z
 DTSTART:20261014T060000
 DTEND:20261020T220000
 SUMMARY:Dialga in 5-star Raid Battles
@@ -104,7 +94,7 @@ URL:https://leekduck.com/events/dialga-in-5-star-raid-battles-october-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-dragonite-in-mega-raids-october-2026@scrapedduck
-DTSTAMP:20261012T032542Z
+DTSTAMP:20261013T184038Z
 DTSTART:20261014T060000
 DTEND:20261020T220000
 SUMMARY:Mega Dragonite in Mega Raids
@@ -114,7 +104,7 @@ URL:https://leekduck.com/events/mega-dragonite-in-mega-raids-october-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:raidhour20261021@scrapedduck
-DTSTAMP:20261012T032542Z
+DTSTAMP:20261013T184038Z
 DTSTART:20261021T180000
 DTEND:20261021T190000
 SUMMARY:Palkia Raid Hour
@@ -123,7 +113,7 @@ URL:https://leekduck.com/events/raidhour20261021/
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemonspotlighthour2026-10-22@scrapedduck
-DTSTAMP:20261012T032542Z
+DTSTAMP:20261013T184038Z
 DTSTART:20261022T180000
 DTEND:20261022T190000
 SUMMARY:Morelull Spotlight Hour
@@ -133,7 +123,7 @@ URL:https://leekduck.com/events/pokemonspotlighthour2026-10-22/
 END:VEVENT
 BEGIN:VEVENT
 UID:minior-showers-orionids-2026@scrapedduck
-DTSTAMP:20261012T032542Z
+DTSTAMP:20261013T184038Z
 DTSTART:20261019T170000
 DTEND:20261024T235900
 SUMMARY:Minior Showers: Orionids 2026
@@ -143,7 +133,7 @@ URL:https://leekduck.com/events/minior-showers-orionids-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:max-mondays-2026-10-26@scrapedduck
-DTSTAMP:20261012T032542Z
+DTSTAMP:20261013T184038Z
 DTSTART:20261026T060000
 DTEND:20261026T210000
 SUMMARY:Dynamax Sableye during Max Monday
@@ -154,7 +144,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:mega-charizard-x-mega-charizard-y-in-mega-raids-october-2026@scrapedduc
  k
-DTSTAMP:20261012T032542Z
+DTSTAMP:20261013T184038Z
 DTSTART:20261021T060000
 DTEND:20261027T220000
 SUMMARY:Mega Charizard X and Mega Charizard Y in Mega Raids
@@ -166,7 +156,7 @@ URL:https://leekduck.com/events/mega-charizard-x-mega-charizard-y-in-mega-r
 END:VEVENT
 BEGIN:VEVENT
 UID:palkia-in-5-star-raid-battles-october-2026@scrapedduck
-DTSTAMP:20261012T032542Z
+DTSTAMP:20261013T184038Z
 DTSTART:20261021T060000
 DTEND:20261027T220000
 SUMMARY:Palkia in 5-star Raid Battles
@@ -176,7 +166,7 @@ URL:https://leekduck.com/events/palkia-in-5-star-raid-battles-october-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:raidhour20261028@scrapedduck
-DTSTAMP:20261012T032542Z
+DTSTAMP:20261013T184038Z
 DTSTART:20261028T180000
 DTEND:20261028T190000
 SUMMARY:Giratina (Origin Forme) Raid Hour
@@ -185,7 +175,7 @@ URL:https://leekduck.com/events/raidhour20261028/
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemonspotlighthour2026-10-29@scrapedduck
-DTSTAMP:20261012T032542Z
+DTSTAMP:20261013T184038Z
 DTSTART:20261029T180000
 DTEND:20261029T190000
 SUMMARY:Gastly Spotlight Hour
@@ -195,7 +185,7 @@ URL:https://leekduck.com/events/pokemonspotlighthour2026-10-29/
 END:VEVENT
 BEGIN:VEVENT
 UID:super-mega-raid-day-october-2026@scrapedduck
-DTSTAMP:20261012T032542Z
+DTSTAMP:20261013T184038Z
 DTSTART:20261031T140000
 DTEND:20261031T170000
 SUMMARY:Super Mega Raid Day
@@ -205,7 +195,7 @@ URL:https://leekduck.com/events/super-mega-raid-day-october-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:halloween-2026-part-1@scrapedduck
-DTSTAMP:20261012T032542Z
+DTSTAMP:20261013T184038Z
 DTSTART:20261027T100000
 DTEND:20261101T100000
 SUMMARY:Pokémon GO Halloween 2026 Part I
@@ -215,7 +205,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:shadow-landorus-incarnate-forme-in-shadow-raids-october-2026@scrapedduc
  k
-DTSTAMP:20261012T032542Z
+DTSTAMP:20261013T184038Z
 DTSTART:20261007T060000
 DTEND:20261103T220000
 SUMMARY:Shadow Landorus (Incarnate Forme) in Shadow Raids
@@ -227,7 +217,7 @@ URL:https://leekduck.com/events/shadow-landorus-incarnate-forme-in-shadow-r
 END:VEVENT
 BEGIN:VEVENT
 UID:giratina-origin-forme-in-5-star-raid-battles-october-2026@scrapedduck
-DTSTAMP:20261012T032542Z
+DTSTAMP:20261013T184038Z
 DTSTART:20261028T060000
 DTEND:20261103T220000
 SUMMARY:Giratina (Origin Forme) in 5-star Raid Battles
@@ -238,7 +228,7 @@ URL:https://leekduck.com/events/giratina-origin-forme-in-5-star-raid-battle
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-sableye-in-mega-raids-october-2026@scrapedduck
-DTSTAMP:20261012T032542Z
+DTSTAMP:20261013T184038Z
 DTSTART:20261028T060000
 DTEND:20261103T220000
 SUMMARY:Mega Sableye in Mega Raids
@@ -248,7 +238,7 @@ URL:https://leekduck.com/events/mega-sableye-in-mega-raids-october-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:halloween-2026-part-2@scrapedduck
-DTSTAMP:20261012T032542Z
+DTSTAMP:20261013T184038Z
 DTSTART:20261101T100000
 DTEND:20261105T200000
 SUMMARY:Pokémon GO Halloween 2026 Part II
@@ -257,7 +247,7 @@ URL:https://leekduck.com/events/halloween-2026-part-2/
 END:VEVENT
 BEGIN:VEVENT
 UID:minior-showers-leonids-2026@scrapedduck
-DTSTAMP:20261012T032542Z
+DTSTAMP:20261013T184038Z
 DTSTART:20261114T170000
 DTEND:20261119T235900
 SUMMARY:Minior Showers: Leonids 2026
@@ -267,7 +257,7 @@ URL:https://leekduck.com/events/minior-showers-leonids-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:november-communityday2026@scrapedduck
-DTSTAMP:20261012T032542Z
+DTSTAMP:20261013T184038Z
 DTSTART:20261121T140000
 DTEND:20261121T170000
 SUMMARY:November Community Day
@@ -277,7 +267,7 @@ URL:https://leekduck.com/events/november-communityday2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:super-mega-raid-day-november-2026@scrapedduck
-DTSTAMP:20261012T032542Z
+DTSTAMP:20261013T184038Z
 DTSTART:20261128T140000
 DTEND:20261128T170000
 SUMMARY:Super Mega Raid Day
@@ -287,7 +277,7 @@ URL:https://leekduck.com/events/super-mega-raid-day-november-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:minior-showers-geminids-2026@scrapedduck
-DTSTAMP:20261012T032542Z
+DTSTAMP:20261013T184038Z
 DTSTART:20261211T170000
 DTEND:20261216T235900
 SUMMARY:Minior Showers: Geminids 2026
@@ -297,7 +287,7 @@ URL:https://leekduck.com/events/minior-showers-geminids-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemon-x-adidas-2026@scrapedduck
-DTSTAMP:20261012T032542Z
+DTSTAMP:20261013T184038Z
 DTSTART:20260925T100000
 DTEND:20270115T200000
 SUMMARY:adidas × Pokémon Timed Research
@@ -306,7 +296,7 @@ URL:https://leekduck.com/events/pokemon-x-adidas-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:minior-showers-eta-aquariids-2027@scrapedduck
-DTSTAMP:20261012T032542Z
+DTSTAMP:20261013T184038Z
 DTSTART:20270503T170000
 DTEND:20270508T235900
 SUMMARY:Minior Showers: Eta Aquariids 2027
@@ -316,7 +306,7 @@ URL:https://leekduck.com/events/minior-showers-eta-aquariids-2027/
 END:VEVENT
 BEGIN:VEVENT
 UID:minior-showers-southern-delta-aquariids-2027@scrapedduck
-DTSTAMP:20261012T032542Z
+DTSTAMP:20261013T184038Z
 DTSTART:20270728T170000
 DTEND:20270802T235900
 SUMMARY:Minior Showers: Southern Delta Aquariids 2027
@@ -327,7 +317,7 @@ URL:https://leekduck.com/events/minior-showers-southern-delta-aquariids-202
 END:VEVENT
 BEGIN:VEVENT
 UID:minior-showers-perseids-2027@scrapedduck
-DTSTAMP:20261012T032542Z
+DTSTAMP:20261013T184038Z
 DTSTART:20270810T170000
 DTEND:20270815T235900
 SUMMARY:Minior Showers: Perseids 2027
