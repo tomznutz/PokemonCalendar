@@ -5,7 +5,7 @@ CALSCALE:GREGORIAN
 X-WR-CALNAME:Pokémon GO Events
 BEGIN:VEVENT
 UID:pokemon-night-out-london-2026@scrapedduck
-DTSTAMP:20261109T214545Z
+DTSTAMP:20261110T052106Z
 DTSTART:20261110T180000Z
 DTEND:20261110T223000Z
 SUMMARY:Pokémon Night Out 2026 - London
@@ -15,7 +15,7 @@ URL:https://leekduck.com/events/pokemon-night-out-london-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:into-the-wild-2026@scrapedduck
-DTSTAMP:20261109T214545Z
+DTSTAMP:20261110T052106Z
 DTSTART:20261109T100000
 DTEND:20261113T200000
 SUMMARY:Into the Wild 2026
@@ -25,7 +25,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:zacian-crowned-sword-zamazenta-crowned-shield-in-5-star-raid-battles-no
  vember-2026@scrapedduck
-DTSTAMP:20261109T214545Z
+DTSTAMP:20261110T052106Z
 DTSTART:20261109T100000
 DTEND:20261113T200000
 SUMMARY:Zacian (Crowned Sword) and Zamazenta (Crowned Shield) in 5-star Rai
@@ -38,7 +38,7 @@ URL:https://leekduck.com/events/zacian-crowned-sword-zamazenta-crowned-shie
 END:VEVENT
 BEGIN:VEVENT
 UID:max-mondays-2026-11-16@scrapedduck
-DTSTAMP:20261109T214545Z
+DTSTAMP:20261110T052106Z
 DTSTART:20261116T060000
 DTEND:20261116T210000
 SUMMARY:Max Monday: Pokémon to be announced
@@ -48,7 +48,7 @@ URL:https://leekduck.com/events/max-mondays-2026-11-16/
 END:VEVENT
 BEGIN:VEVENT
 UID:raidhour20261118@scrapedduck
-DTSTAMP:20261109T214545Z
+DTSTAMP:20261110T052106Z
 DTSTART:20261118T180000
 DTEND:20261118T190000
 SUMMARY:Cresselia and Darkrai Raid Hour
@@ -57,7 +57,7 @@ URL:https://leekduck.com/events/raidhour20261118/
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemonspotlighthour2026-11-19@scrapedduck
-DTSTAMP:20261109T214545Z
+DTSTAMP:20261110T052106Z
 DTSTART:20261119T180000
 DTEND:20261119T190000
 SUMMARY:Grookey\, Scorbunny\, and Sobble Spotlight Hour
@@ -67,7 +67,7 @@ URL:https://leekduck.com/events/pokemonspotlighthour2026-11-19/
 END:VEVENT
 BEGIN:VEVENT
 UID:minior-showers-leonids-2026@scrapedduck
-DTSTAMP:20261109T214545Z
+DTSTAMP:20261110T052106Z
 DTSTART:20261114T170000
 DTEND:20261119T235900
 SUMMARY:Minior Showers: Leonids 2026
@@ -77,7 +77,7 @@ URL:https://leekduck.com/events/minior-showers-leonids-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:november-communityday2026@scrapedduck
-DTSTAMP:20261109T214545Z
+DTSTAMP:20261110T052106Z
 DTSTART:20261121T140000
 DTEND:20261121T170000
 SUMMARY:Pawniard Community Day
@@ -92,7 +92,7 @@ URL:https://leekduck.com/events/november-communityday2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:dynamax-trails-2026@scrapedduck
-DTSTAMP:20261109T214545Z
+DTSTAMP:20261110T052106Z
 DTSTART:20261116T100000
 DTEND:20261123T200000
 SUMMARY:Dynamax Trails
@@ -101,7 +101,7 @@ URL:https://leekduck.com/events/dynamax-trails-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:max-mondays-2026-11-23@scrapedduck
-DTSTAMP:20261109T214545Z
+DTSTAMP:20261110T052106Z
 DTSTART:20261123T060000
 DTEND:20261123T210000
 SUMMARY:Dynamax Espurr during Max Monday
@@ -111,7 +111,7 @@ URL:https://leekduck.com/events/max-mondays-2026-11-23/
 END:VEVENT
 BEGIN:VEVENT
 UID:cresselia-darkrai-in-5-star-raid-battles-november-2026@scrapedduck
-DTSTAMP:20261109T214545Z
+DTSTAMP:20261110T052106Z
 DTSTART:20261116T060000
 DTEND:20261124T220000
 SUMMARY:Cresselia and Darkrai in 5-star Raid Battles
@@ -122,7 +122,7 @@ URL:https://leekduck.com/events/cresselia-darkrai-in-5-star-raid-battles-no
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-banette-in-mega-raids-november-2026@scrapedduck
-DTSTAMP:20261109T214545Z
+DTSTAMP:20261110T052106Z
 DTSTART:20261116T060000
 DTEND:20261124T220000
 SUMMARY:Mega Banette in Mega Raids
@@ -132,7 +132,7 @@ URL:https://leekduck.com/events/mega-banette-in-mega-raids-november-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:raidhour20261125@scrapedduck
-DTSTAMP:20261109T214545Z
+DTSTAMP:20261110T052106Z
 DTSTART:20261125T180000
 DTEND:20261125T190000
 SUMMARY:Deoxys (Normal\, Defense\, Attack\, and Speed Formes) Raid Hour
@@ -141,7 +141,7 @@ URL:https://leekduck.com/events/raidhour20261125/
 END:VEVENT
 BEGIN:VEVENT
 UID:pokemonspotlighthour2026-11-26@scrapedduck
-DTSTAMP:20261109T214545Z
+DTSTAMP:20261110T052106Z
 DTSTART:20261126T180000
 DTEND:20261126T190000
 SUMMARY:Noibat Spotlight Hour
@@ -151,7 +151,7 @@ URL:https://leekduck.com/events/pokemonspotlighthour2026-11-26/
 END:VEVENT
 BEGIN:VEVENT
 UID:clefable-super-mega-raid-day-2026@scrapedduck
-DTSTAMP:20261109T214545Z
+DTSTAMP:20261110T052106Z
 DTSTART:20261128T140000
 DTEND:20261128T170000
 SUMMARY:Clefable Super Mega Raid Day
@@ -161,7 +161,7 @@ URL:https://leekduck.com/events/clefable-super-mega-raid-day-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:twilight-wishes-2026@scrapedduck
-DTSTAMP:20261109T214545Z
+DTSTAMP:20261110T052106Z
 DTSTART:20261124T100000
 DTEND:20261130T200000
 SUMMARY:Twilight Wishes
@@ -170,7 +170,7 @@ URL:https://leekduck.com/events/twilight-wishes-2026/
 END:VEVENT
 BEGIN:VEVENT
 UID:max-mondays-2026-11-30@scrapedduck
-DTSTAMP:20261109T214545Z
+DTSTAMP:20261110T052106Z
 DTSTART:20261130T060000
 DTEND:20261130T210000
 SUMMARY:Dynamax Cryogonal during Max Monday
@@ -181,7 +181,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:shadow-tornadus-incarnate-forme-in-shadow-raids-november-16-2026@scrape
  dduck
-DTSTAMP:20261109T214545Z
+DTSTAMP:20261110T052106Z
 DTSTART:20261116T060000
 DTEND:20261201T220000
 SUMMARY:Shadow Tornadus (Incarnate Forme) in Shadow Raids
@@ -194,7 +194,7 @@ END:VEVENT
 BEGIN:VEVENT
 UID:deoxys-normal-defense-attack-speed-formes-in-5-star-raid-battles-novemb
  er-2026@scrapedduck
-DTSTAMP:20261109T214545Z
+DTSTAMP:20261110T052106Z
 DTSTART:20261125T060000
 DTEND:20261201T220000
 SUMMARY:Deoxys (Normal\, Defense\, Attack\, and Speed Formes) in 5-star Rai
@@ -208,7 +208,7 @@ URL:https://leekduck.com/events/deoxys-normal-defense-attack-speed-formes-i
 END:VEVENT
 BEGIN:VEVENT
 UID:mega-metagross-in-mega-raids-november-2026@scrapedduck
-DTSTAMP:20261109T214545Z
+DTSTAMP:20261110T052106Z
 DTSTART:20261125T060000
 DTEND:20261201T220000
 SUMMARY:Mega Metagross in Mega Raids
@@ -217,8 +217,18 @@ DESCRIPTION:Raid Battles\nBosses: Mega Metagross ✨\n\nhttps://leekduck.co
 URL:https://leekduck.com/events/mega-metagross-in-mega-raids-november-2026/
 END:VEVENT
 BEGIN:VEVENT
+UID:december-communityday2026@scrapedduck
+DTSTAMP:20261110T052106Z
+DTSTART:20261212T140000
+DTEND:20261213T170000
+SUMMARY:December Community Day
+DESCRIPTION:Community Day\n\nhttps://leekduck.com/events/december-community
+ day2026/
+URL:https://leekduck.com/events/december-communityday2026/
+END:VEVENT
+BEGIN:VEVENT
 UID:minior-showers-geminids-2026@scrapedduck
-DTSTAMP:20261109T214545Z
+DTSTAMP:20261110T052106Z
 DTSTART:20261211T170000
 DTEND:20261216T235900
 SUMMARY:Minior Showers: Geminids 2026
@@ -227,8 +237,46 @@ DESCRIPTION:Event\n\nhttps://leekduck.com/events/minior-showers-geminids-20
 URL:https://leekduck.com/events/minior-showers-geminids-2026/
 END:VEVENT
 BEGIN:VEVENT
+UID:raid-day-december-2026@scrapedduck
+DTSTAMP:20261110T052106Z
+DTSTART:20261219T140000
+DTEND:20261219T170000
+SUMMARY:Raid Day
+DESCRIPTION:Raid Day\n\nhttps://leekduck.com/events/raid-day-december-2026/
+URL:https://leekduck.com/events/raid-day-december-2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:hatch-day-december-2026@scrapedduck
+DTSTAMP:20261110T052106Z
+DTSTART:20261226T110000
+DTEND:20261226T170000
+SUMMARY:Hatch Day
+DESCRIPTION:Event\n\nhttps://leekduck.com/events/hatch-day-december-2026/
+URL:https://leekduck.com/events/hatch-day-december-2026/
+END:VEVENT
+BEGIN:VEVENT
+UID:january-communitydayclassic2027@scrapedduck
+DTSTAMP:20261110T052106Z
+DTSTART:20270102T140000
+DTEND:20270102T170000
+SUMMARY:January Community Day Classic
+DESCRIPTION:Community Day\n\nhttps://leekduck.com/events/january-communityd
+ ayclassic2027/
+URL:https://leekduck.com/events/january-communitydayclassic2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:super-mega-raid-day-january-2027@scrapedduck
+DTSTAMP:20261110T052106Z
+DTSTART:20270109T140000
+DTEND:20270109T170000
+SUMMARY:Super Mega Raid Day
+DESCRIPTION:Raid Day\n\nhttps://leekduck.com/events/super-mega-raid-day-jan
+ uary-2027/
+URL:https://leekduck.com/events/super-mega-raid-day-january-2027/
+END:VEVENT
+BEGIN:VEVENT
 UID:pokemon-x-adidas-2026@scrapedduck
-DTSTAMP:20261109T214545Z
+DTSTAMP:20261110T052106Z
 DTSTART:20260925T100000
 DTEND:20270115T200000
 SUMMARY:adidas × Pokémon Timed Research
@@ -236,8 +284,47 @@ DESCRIPTION:Research\n\nhttps://leekduck.com/events/pokemon-x-adidas-2026/
 URL:https://leekduck.com/events/pokemon-x-adidas-2026/
 END:VEVENT
 BEGIN:VEVENT
+UID:january-communityday2027@scrapedduck
+DTSTAMP:20261110T052106Z
+DTSTART:20270116T140000
+DTEND:20270116T170000
+SUMMARY:January Community Day
+DESCRIPTION:Community Day\n\nhttps://leekduck.com/events/january-communityd
+ ay2027/
+URL:https://leekduck.com/events/january-communityday2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:super-mega-raid-day-january-30-2027@scrapedduck
+DTSTAMP:20261110T052106Z
+DTSTART:20270130T140000
+DTEND:20270130T170000
+SUMMARY:Super Mega Raid Day
+DESCRIPTION:Raid Day\n\nhttps://leekduck.com/events/super-mega-raid-day-jan
+ uary-30-2027/
+URL:https://leekduck.com/events/super-mega-raid-day-january-30-2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:february-communityday2027@scrapedduck
+DTSTAMP:20261110T052106Z
+DTSTART:20270206T140000
+DTEND:20270206T170000
+SUMMARY:February Community Day
+DESCRIPTION:Community Day\n\nhttps://leekduck.com/events/february-community
+ day2027/
+URL:https://leekduck.com/events/february-communityday2027/
+END:VEVENT
+BEGIN:VEVENT
+UID:raid-day-february-2027@scrapedduck
+DTSTAMP:20261110T052106Z
+DTSTART:20270213T140000
+DTEND:20270213T170000
+SUMMARY:Raid Day
+DESCRIPTION:Raid Day\n\nhttps://leekduck.com/events/raid-day-february-2027/
+URL:https://leekduck.com/events/raid-day-february-2027/
+END:VEVENT
+BEGIN:VEVENT
 UID:minior-showers-eta-aquariids-2027@scrapedduck
-DTSTAMP:20261109T214545Z
+DTSTAMP:20261110T052106Z
 DTSTART:20270503T170000
 DTEND:20270508T235900
 SUMMARY:Minior Showers: Eta Aquariids 2027
@@ -247,7 +334,7 @@ URL:https://leekduck.com/events/minior-showers-eta-aquariids-2027/
 END:VEVENT
 BEGIN:VEVENT
 UID:minior-showers-southern-delta-aquariids-2027@scrapedduck
-DTSTAMP:20261109T214545Z
+DTSTAMP:20261110T052106Z
 DTSTART:20270728T170000
 DTEND:20270802T235900
 SUMMARY:Minior Showers: Southern Delta Aquariids 2027
@@ -258,7 +345,7 @@ URL:https://leekduck.com/events/minior-showers-southern-delta-aquariids-202
 END:VEVENT
 BEGIN:VEVENT
 UID:minior-showers-perseids-2027@scrapedduck
-DTSTAMP:20261109T214545Z
+DTSTAMP:20261110T052106Z
 DTSTART:20270810T170000
 DTEND:20270815T235900
 SUMMARY:Minior Showers: Perseids 2027
